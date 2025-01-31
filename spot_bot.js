@@ -11,11 +11,13 @@ app.use(express.json());
 app.use(cors());
 
 const binance = new Spot(process.env.BINANCE_API_KEY, process.env.BINANCE_API_SECRET);
-const tradeHistoryFile = "paper_trades.json"; // Paper Trading története
+function getTradeHistoryFile() {
+    return config.paperTrading ? "paper_trades.json" : "trade_history.json";
+}
 
 let config = loadConfig();
 let botRunning = config.botRunning || false;
-let virtualBalance = config.virtualBalance || 1000; // Alapértelmezett virtuális USDC egyenleg
+let virtualBalance = config.virtualBalance || 100; // Alapértelmezett virtuális USDC egyenleg
 let openPosition = null;
 
 // 📌 USDC egyenleg lekérése (Papírkereskedés esetén a virtuális egyenleget használjuk)
@@ -62,12 +64,12 @@ async function trade() {
 
     let { rsi, sma50, sma200, currentPrice } = indicators;
     let usdcBalance = await getUSDCBalance();
-    let buyLimit = config.buyLimit / 100;
+    let buyLimit = (config.buyLimit || 0) / 100;
     let availableUSDC = usdcBalance * buyLimit;
     let quantity = availableUSDC / currentPrice;
 
-    console.log('Paper Trading:', config.paperTrading);
-
+    console.log(config.paperTrading ? "📝 [PAPER TRADING]" : "📈 Valós kereskedés");
+    console.log(usdcBalance + 'USDC | ' + availableUSDC + 'USDC');
     console.log(`📊 ${symbol} | RSI: ${rsi.toFixed(2)} | SMA50: ${sma50.toFixed(2)} | SMA200: ${sma200.toFixed(2)} | ${currentPrice} USDC | ${quantity}`);
 
     // ✅ VÉTELI LOGIKA: RSI < 30 és bullish trend (SMA50 > SMA200)
@@ -90,7 +92,7 @@ async function trade() {
     }
 
     // ✅ ELADÁSI LOGIKA: RSI > 70 és van nyitott pozíció
-    if (rsi > 70 && openPosition) {
+    if (rsi > 60 && openPosition) {
         console.log(`📈 Túlvett piac! ELADÁS @ ${currentPrice} USDC`);
 
         if (config.paperTrading) {
@@ -109,10 +111,12 @@ async function trade() {
 
 // 🔥 Trade mentése JSON fájlba
 function saveTrade(type, symbol, price, quantity) {
+    let historyFile = getTradeHistoryFile();
     let history = [];
+
     try {
-        if (fs.existsSync(tradeHistoryFile)) {
-            history = JSON.parse(fs.readFileSync(tradeHistoryFile));
+        if (fs.existsSync(historyFile)) {
+            history = JSON.parse(fs.readFileSync(historyFile));
         }
     } catch (err) {
         console.error("❌ Hiba a trade history olvasásakor:", err);
@@ -120,7 +124,7 @@ function saveTrade(type, symbol, price, quantity) {
 
     let trade = { time: new Date().toISOString(), type, symbol, price, quantity };
     history.push(trade);
-    fs.writeFileSync(tradeHistoryFile, JSON.stringify(history, null, 2));
+    fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
 }
 
 // 🔄 Trade futtatása időzítve (5 percenként)
@@ -131,7 +135,7 @@ app.get('/status', (req, res) => res.json({ running: botRunning, openPosition })
 
 app.get('/trade-history', (req, res) => {
     try {
-        let history = fs.existsSync(tradeHistoryFile) ? JSON.parse(fs.readFileSync(tradeHistoryFile)) : [];
+        let history = fs.existsSync(historyFile) ? JSON.parse(fs.readFileSync(historyFile)) : [];
         res.json(history);
     } catch (err) {
         console.error("❌ Hiba a trade history olvasásakor:", err);

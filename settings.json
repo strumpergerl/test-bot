@@ -2,5 +2,6 @@
   "symbol": "AIXBTUSDC",
   "botRunning": true,
   "paperTrading": true,
-  "buyLimit": 25
+  "buyLimit": 25,
+  "virtualBalance": 100
 }
