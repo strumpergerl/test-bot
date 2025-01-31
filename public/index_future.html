@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Binance Trading Bot</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				margin: 50px;
+			}
+			button,
+			select {
+				font-size: 20px;
+				padding: 10px;
+				margin: 10px;
+				cursor: pointer;
+			}
+			#status {
+				font-size: 24px;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Binance RSI Trading Bot</h1>
+
+		<label for="pair">Kereskedési pár:</label>
+		<select id="pair" onchange="updatePair()">
+			<option value="BTCUSDC">BTC/USDC</option>
+			<option value="ETHUSDC">ETH/USDC</option>
+			<option value="BNBUSDC">BNB/USDC</option>
+			<option value="USUALUSDC">USUAL/USDC</option>
+		</select>
+
+		<br />
+		<button onclick="startBot()">Start</button>
+		<button onclick="stopBot()">Stop</button>
+
+		<p id="status">Bot állapota: <span id="bot-status">N/A</span></p>
+
+		<script>
+			const serverURL = 'http://localhost:3000';
+
+			function updatePair() {
+				const newPair = document.getElementById('pair').value;
+				fetch(serverURL + '/set-pair', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ symbol: newPair }),
+				})
+					.then((res) => res.json())
+					.then((data) => alert(data.message));
+			}
+
+			function startBot() {
+				fetch(serverURL + '/start', { method: 'POST' })
+					.then((res) => res.json())
+					.then((data) => alert(data.message));
+			}
+
+			function stopBot() {
+				fetch(serverURL + '/stop', { method: 'POST' })
+					.then((res) => res.json())
+					.then((data) => alert(data.message));
+			}
+
+			async function loadCurrentPair() {
+				const response = await fetch(serverURL + '/get-pair');
+				const data = await response.json();
+				document.getElementById('pair').value = data.symbol;
+			}
+
+			async function updateStatus() {
+				try {
+					const response = await fetch(serverURL + '/status');
+					const data = await response.json();
+					document.getElementById('bot-status').innerText =
+						data.status === 'running' ? 'Fut' : 'Leállt';
+				} catch (err) {
+					console.error('Hiba a státusz lekérésénél:', err);
+				}
+			}
+
+			// Oldal betöltésekor frissíti a státuszt
+			updateStatus();
+			setInterval(updateStatus, 5000); // 5 másodpercenként frissíti a státuszt
+
+			loadCurrentPair();
+		</script>
+	</body>
+</html>

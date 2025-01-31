@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spot Trading Bot</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-gray-900 text-white">
+		<!-- Fejléc -->
+		<header class="bg-gray-800 p-4 flex justify-between items-center shadow-lg">
+			<!-- Bal oldal: Trading mód kijelzés -->
+			<div id="trading-mode" class="text-lg font-semibold text-gray-300">
+				Betöltés...
+			</div>
+
+			<!-- Középen a cím -->
+			<h1 class="text-2xl font-bold text-center flex-grow">Spot Trading Bot</h1>
+
+			<!-- Jobb oldalon a bot állapot és gombok -->
+			<div class="flex items-center space-x-6">
+				<span class="text-lg"
+					>Kereskedési pár: <strong id="current-pair">Betöltés...</strong></span
+				>
+
+				<div class="flex items-center space-x-2">
+					<span
+						id="bot-indicator"
+						class="w-4 h-4 rounded-full bg-red-500 inline-block"
+					></span>
+					<span id="bot-status" class="text-lg">Leállítva</span>
+				</div>
+
+				<button
+					onclick="startBot()"
+					class="px-4 py-2 bg-green-600 rounded hover:bg-green-500"
+				>
+					Start
+				</button>
+				<button
+					onclick="stopBot()"
+					class="px-4 py-2 bg-red-600 rounded hover:bg-red-500"
+				>
+					Stop
+				</button>
+			</div>
+		</header>
+
+		<div class="container mx-auto p-6">
+			<!-- Kereskedési pár kiválasztása -->
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<div
+					class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6"
+				>
+					<label for="pair" class="text-lg">Válassz új kereskedési párt:</label>
+					<select
+						id="pair"
+						class="p-2 rounded bg-gray-700 text-white"
+						onchange="updatePair()"
+					>
+						<option value="BTCUSDC">BTC/USDC</option>
+						<option value="ETHUSDC">ETH/USDC</option>
+						<option value="BNBUSDC">BNB/USDC</option>
+						<option value="TRUMPUSDC">TRUMP/USDC</option>
+					</select>
+				</div>
+
+				<div class="flex items-center space-x-4">
+					<h3 class="font-semibold mt-6 mb-2">Vásárlási Limit</h3>
+					<input
+						id="buy-limit"
+						type="range"
+						min="1"
+						max="100"
+						value="100"
+						class="w-64"
+					/>
+					<span id="buy-limit-value">100%</span>
+					<button
+						onclick="updateBuyLimit()"
+						class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500"
+					>
+						Mentés
+					</button>
+				</div>
+			</div>
+
+			<h2 class="text-xl font-semibold mb-2">
+				Kereskedési Pár: <span id="pair-display">Betöltés...</span>
+			</h2>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<!-- Indikátorok -->
+				<div class="bg-gray-800 p-4 rounded shadow-lg">
+					<h2 class="text-lg font-semibold mb-2">Indikátorok</h2>
+					<p id="indicators" class="text-gray-300">Indikátorok betöltése...</p>
+				</div>
+
+				<!-- Stop-Loss és Trailing Stop -->
+				<div class="bg-gray-800 p-4 rounded shadow-lg">
+					<h2 class="text-lg font-semibold mb-2">Stop-Loss és Trailing Stop</h2>
+					<p id="stop-loss" class="text-gray-300">Stop-Loss: Betöltés...</p>
+					<p id="trailing-stop" class="text-gray-300">
+						Trailing Stop-Loss: Betöltés...
+					</p>
+				</div>
+			</div>
+
+			<h2 class="text-xl font-semibold mb-2">Spot Portfólió</h2>
+			<table
+				class="w-full text-left bg-gray-800 rounded overflow-hidden shadow-lg"
+			>
+				<thead>
+					<tr class="bg-gray-700">
+						<th class="p-3">Eszköz</th>
+						<th class="p-3">Szabad Egyenleg</th>
+						<th class="p-3">Függő Egyenleg</th>
+					</tr>
+				</thead>
+				<tbody id="portfolio-table" class="divide-y divide-gray-700"></tbody>
+			</table>
+
+			<h2 class="text-xl font-semibold mt-6 mb-2">Trade Előzmények</h2>
+			<table
+				class="w-full text-left bg-gray-800 rounded overflow-hidden shadow-lg"
+			>
+				<!-- <thead>
+					<tr class="bg-gray-700">
+						<th class="p-3">Idő</th>
+						<th class="p-3">Típus</th>
+						<th class="p-3">Pár</th>
+						<th class="p-3">Ár</th>
+						<th class="p-3">Mennyiség</th>
+					</tr>
+				</thead> -->
+				<tbody
+					id="trade-history-table"
+					class="divide-y divide-gray-700"
+				></tbody>
+			</table>
+		</div>
+
+		<script>
+			const serverURL = 'http://localhost:3000';
+
+			function updatePair() {
+				const newPair = document.getElementById('pair').value;
+				fetch(serverURL + '/set-pair', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ symbol: newPair }),
+				})
+					.then((res) => res.json())
+					.then((data) => {
+						alert(data.message);
+						loadCurrentPair();
+					});
+			}
+
+			function startBot() {
+				fetch(serverURL + '/start', { method: 'POST' }).then((res) =>
+					res.json()
+				);
+				// .then((data) => alert(data.message));
+			}
+
+			function stopBot() {
+				fetch(serverURL + '/stop', { method: 'POST' }).then((res) =>
+					res.json()
+				);
+				// .then((data) => alert(data.message));
+			}
+
+			async function loadCurrentPair() {
+				const response = await fetch(serverURL + '/status');
+				const data = await response.json();
+				document.getElementById('current-pair').innerText = data.data.symbol;
+				document.getElementById('pair-display').innerText = data.data.symbol;
+			}
+
+			async function loadStatus() {
+				const response = await fetch(serverURL + '/status');
+				const data = await response.json();
+
+				document.getElementById('bot-status').innerText = data.running
+					? 'Fut'
+					: 'Leállítva';
+				document.getElementById('bot-indicator').classList = data.running
+					? 'w-4 h-4 rounded-full bg-green-500 inline-block'
+					: 'w-4 h-4 rounded-full bg-red-500 inline-block';
+
+				if (data.data) {
+					document.getElementById('pair-display').innerText = data.data.symbol;
+					document.getElementById('indicators').innerHTML = `
+            <p>RSI: <span class="font-semibold">${data.data.rsi}</span></p>
+            <p>SMA50: <span class="font-semibold">${data.data.sma50}</span></p>
+            <p>SMA200: <span class="font-semibold">${data.data.sma200}</span></p>
+            <p>Ár: <span class="font-semibold">${data.data.currentPrice} USDC</span></p>
+        `;
+
+					document.getElementById(
+						'stop-loss'
+					).innerHTML = `Stop-Loss: <span class="font-semibold">${
+						data.data.stopLoss || 'Nincs'
+					}</span>`;
+					document.getElementById(
+						'trailing-stop'
+					).innerHTML = `Trailing Stop-Loss: <span class="font-semibold">${
+						data.data.trailingStop || 'Nincs'
+					}</span>`;
+				}
+			}
+
+			async function loadBalance() {
+				const response = await fetch(serverURL + '/balance');
+				const data = await response.json();
+
+				let table = document.getElementById('portfolio-table');
+				table.innerHTML = `
+        <tr>
+            <th>Eszköz</th>
+            <th>Szabad Egyenleg</th>
+            <th>Függő Egyenleg</th>
+        </tr>
+    `; // Fejléc újraépítése
+
+				data.portfolio.forEach((asset) => {
+					let row = table.insertRow();
+					row.insertCell(0).innerText = asset.asset;
+					row.insertCell(1).innerText = asset.free;
+					row.insertCell(2).innerText = asset.locked;
+				});
+			}
+
+			async function loadTradingMode() {
+				try {
+					const response = await fetch(serverURL + '/trading-mode');
+					const data = await response.json();
+					document.getElementById('trading-mode').innerText = data.mode;
+				} catch (error) {
+					console.error('❌ Hiba a trading mód lekérésekor:', error);
+				}
+			}
+
+			async function loadBuyLimit() {
+				try {
+					const response = await fetch(serverURL + '/buy-limit');
+					const data = await response.json();
+					document.getElementById('buy-limit').value = data.buyLimit;
+					document.getElementById(
+						'buy-limit-value'
+					).innerText = `${data.buyLimit}%`;
+				} catch (error) {
+					console.error('❌ Hiba a vásárlási limit lekérésekor:', error);
+				}
+			}
+
+			async function updateBuyLimit() {
+				let newLimit = document.getElementById('buy-limit').value;
+				try {
+					await fetch(serverURL + '/buy-limit', {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({ limit: parseInt(newLimit) }),
+					});
+					alert(`Vásárlási limit frissítve: ${newLimit}%`);
+					loadBuyLimit();
+				} catch (error) {
+					console.error('❌ Hiba a vásárlási limit mentésekor:', error);
+				}
+			}
+
+			async function isPaperTrading() {
+				try {
+					const response = await fetch(serverURL + '/trading-mode');
+					const data = await response.json();
+					return data.mode === 'Paper Trading';
+				} catch (error) {
+					console.error('❌ Hiba a trading mód lekérésekor:', error);
+					return false;
+				}
+			}
+
+			async function loadTradeHistory() {
+				const isPaper = await isPaperTrading();
+				const historyEndpoint = isPaper
+					? '/paper-trade-history'
+					: '/trade-history';
+
+				try {
+					const response = await fetch(serverURL + historyEndpoint);
+					if (!response.ok)
+						throw new Error(`HTTP error! Status: ${response.status}`);
+
+					const data = await response.json();
+
+					let table = document.getElementById('trade-history-table');
+					table.innerHTML = `
+                <tr>
+                    <th>Idő</th>
+                    <th>Típus</th>
+                    <th>Pár</th>
+                    <th>Ár</th>
+                    <th>Mennyiség</th>
+                </tr>
+            `;
+
+					if (data.length === 0) {
+						table.innerHTML += `<tr><td colspan="5" class="text-center">Nincsenek elérhető trade előzmények.</td></tr>`;
+					} else {
+						data.reverse().forEach((trade) => {
+							let row = table.insertRow();
+							row.insertCell(0).innerText = new Date(
+								trade.time
+							).toLocaleString();
+							row.insertCell(1).innerText = trade.type;
+							row.insertCell(2).innerText = trade.symbol;
+							row.insertCell(3).innerText = trade.price + ' USDC';
+							row.insertCell(4).innerText = trade.quantity;
+						});
+					}
+				} catch (error) {
+					console.error('❌ Hiba a trade előzmények betöltésekor:', error);
+					document.getElementById('trade-history-table').innerHTML =
+						"<tr><td colspan='5'>Hiba történt a trade előzmények betöltésekor.</td></tr>";
+				}
+			}
+
+			// 10 másodpercenként frissítjük a trade előzményeket
+			setInterval(loadTradeHistory, 10000);
+			loadTradeHistory();
+
+			setInterval(loadBuyLimit, 5000);
+			loadBuyLimit();
+
+			// 5 másodpercenként frissítjük a kereskedési módot
+			setInterval(loadTradingMode, 5000);
+			loadTradingMode();
+
+			// 5 másodpercenként frissítjük a portfóliót
+			setInterval(loadBalance, 5000);
+			loadBalance();
+
+			setInterval(loadCurrentPair, 5000);
+			setInterval(loadStatus, 5000);
+			loadCurrentPair();
+			loadStatus();
+		</script>
+	</body>
+</html>
