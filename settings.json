@@ -3,5 +3,7 @@
   "botRunning": true,
   "paperTrading": true,
   "buyLimit": 25,
-  "virtualBalance": 100
+  "virtualBalance": 100,
+  "stopLossPercent": 5,
+  "trailingStopLossPercent": 2
 }
