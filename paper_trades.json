@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "time": "2025-01-31T15:45:44.663Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4912,
+    "quantity": 508.957654723127
+  },
+  {
+    "time": "2025-01-31T15:45:50.495Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4912,
+    "quantity": 508.957654723127
+  },
+  {
+    "time": "2025-01-31T15:45:56.440Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4912,
+    "quantity": 508.957654723127
+  },
+  {
+    "time": "2025-01-31T15:46:02.292Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4912,
+    "quantity": 508.957654723127
+  },
+  {
+    "time": "2025-01-31T15:46:08.122Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4912,
+    "quantity": 508.957654723127
+  },
+  {
+    "time": "2025-01-31T15:46:13.939Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4908,
+    "quantity": 509.3724531377343
+  },
+  {
+    "time": "2025-01-31T15:46:19.737Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4908,
+    "quantity": 509.3724531377343
+  },
+  {
+    "time": "2025-01-31T15:46:25.569Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4908,
+    "quantity": 509.3724531377343
+  },
+  {
+    "time": "2025-01-31T15:46:31.423Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.4908,
+    "quantity": 509.3724531377343
+  }
+]

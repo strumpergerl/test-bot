@@ -11,16 +11,18 @@ app.use(express.json());
 app.use(cors());
 
 const binance = new Spot(process.env.BINANCE_API_KEY, process.env.BINANCE_API_SECRET);
-const tradeHistoryFile = "trade_history.json";
+const tradeHistoryFile = "paper_trades.json"; // Paper Trading története
 
 let config = loadConfig();
 let botRunning = config.botRunning || false;
-let virtualBalance = config.virtualBalance || 100;
+let virtualBalance = config.virtualBalance || 1000; // Alapértelmezett virtuális USDC egyenleg
 let openPosition = null;
 
-// 📌 USDC egyenleg lekérése
+// 📌 USDC egyenleg lekérése (Papírkereskedés esetén a virtuális egyenleget használjuk)
 async function getUSDCBalance() {
-    console.log("🔄 USDC egyenleg lekérése...");
+    if (config.paperTrading) {
+        return virtualBalance;
+    }
     try {
         let accountInfo = await binance.account();
         let usdcBalance = accountInfo.data.balances.find(b => b.asset === "USDC");
@@ -51,25 +53,22 @@ async function getIndicators(symbol) {
 
 // 🔄 Kereskedési logika (Vétel & Eladás)
 async function trade() {
-    if (!botRunning) {
-        console.log("⛔ A bot nem fut, nem végzünk kereskedést.");
-        return;
-    }
+    if (!botRunning) return;
 
     config = loadConfig();
     let symbol = config.symbol || "BTCUSDC";
     let indicators = await getIndicators(symbol);
     if (!indicators) return;
-    
-    let { rsi, sma50, sma200, currentPrice } = indicators;
-    console.log(`📊 Indikátorok: RSI: ${indicators.rsi.toFixed(2)} | SMA50: ${indicators.sma50.toFixed(2)} | SMA200: ${indicators.sma200.toFixed(2)}`);
 
+    let { rsi, sma50, sma200, currentPrice } = indicators;
     let usdcBalance = await getUSDCBalance();
     let buyLimit = config.buyLimit / 100;
     let availableUSDC = usdcBalance * buyLimit;
     let quantity = availableUSDC / currentPrice;
 
-    console.log(`💰 USDC egyenleg: ${usdcBalance.toFixed(2)} USDC | Vásárlási limit: ${buyLimit * 100}% | Elérhető USDC: ${availableUSDC.toFixed(2)} USDC`);
+    console.log('Paper Trading:', config.paperTrading);
+
+    console.log(`📊 ${symbol} | RSI: ${rsi.toFixed(2)} | SMA50: ${sma50.toFixed(2)} | SMA200: ${sma200.toFixed(2)} | ${currentPrice} USDC | ${quantity}`);
 
     // ✅ VÉTELI LOGIKA: RSI < 30 és bullish trend (SMA50 > SMA200)
     if (rsi < 30 && sma50 > sma200 && !openPosition) {
@@ -126,7 +125,6 @@ function saveTrade(type, symbol, price, quantity) {
 
 // 🔄 Trade futtatása időzítve (5 percenként)
 setInterval(trade, 5 * 1000);
-// setInterval(trade, 5 * 60 * 1000);
 
 // 🔥 API végpontok
 app.get('/status', (req, res) => res.json({ running: botRunning, openPosition }));
@@ -156,4 +154,4 @@ app.post('/stop', (req, res) => {
 });
 
 // 🔥 Indítás
-// app.listen(4000, () => console.log("✅ Trading bot API fut a 4000-es porton"));
+app.listen(4000, () => console.log("✅ Trading bot API fut a 4000-es porton"));
