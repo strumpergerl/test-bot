@@ -46,15 +46,11 @@ async function getUSDCBalance() {
 
 // 📊 Indikátorok számítása
 async function getIndicators(symbol) {
-	// Ellenőrizzük, hogy a symbol létezik és string típusú,
-	// különben konvertáljuk stringgé
-	if (!symbol) {
+	if (!symbol || typeof symbol !== 'string' || symbol.trim() === '') {
 	  console.error("❌ Hiba: Hiányzik a symbol paraméter.");
 	  return null;
 	}
-	// Konvertáljuk stringgé és nagybetűsre, mivel a Binance ezt várja
-	symbol = String(symbol).toUpperCase();
-	
+	symbol = String(symbol).trim().toUpperCase();
 	try {
 	  let response = await binance.klines(symbol, '15m', { limit: 200 });
 	  let closes = response.data.map((c) => parseFloat(c[4]));
@@ -70,16 +66,26 @@ async function getIndicators(symbol) {
 	}
   }
   
+  
 
-async function trade() {
+  async function trade() {
 	if (!botRunning) return;
 	config = loadConfig();
-	// Ha van "symbols" tömb, azt használjuk, különben fallback a régi "symbol" érték
-	const symbols = config.symbols || [config.symbol || 'BTCUSDC'];
-	for (const symbol of symbols) {
-		await tradeSymbol(symbol);
+	// Ha nincs "symbols" tömb, akkor fallback a régi "symbol" vagy alapértelmezett 'BTCUSDC'
+	const symbols = (config.symbols && config.symbols.length > 0)
+	  ? config.symbols
+	  : [config.symbol || 'BTCUSDC'];
+	
+	if (!symbols.length) {
+	  console.error("❌ Nincs megadva kereskedési pár a konfigurációban!");
+	  return;
 	}
-}
+	
+	for (const symbol of symbols) {
+	  await tradeSymbol(symbol);
+	}
+  }
+  
 
 // 🔄 Kereskedési logika (Vétel & Eladás)
 async function tradeSymbol(symbol) {

@@ -16,13 +16,17 @@ app.get('/status', (req, res) => res.json({ running: config.botRunning }));
 app.post('/set-pair', (req, res) => {
     if (!req.body.symbol) return res.status(400).json({ message: "Hiányzó kereskedési pár." });
     // Vesszővel elválasztva több pár is megadható
-    let symbols = req.body.symbol.split(',').map(s => s.trim());
+    let symbols = req.body.symbol.split(',').map(s => s.trim()).filter(s => s !== '');
+    if (!symbols.length) {
+      return res.status(400).json({ message: "Érvénytelen kereskedési pár(oka)." });
+    }
     config.symbols = symbols;
-    // Backward compatibility: az első párral is beállítjuk a config.symbol értékét
+    // Backward compatibility: az első párt is beállítjuk
     config.symbol = symbols[0];
     saveConfig(config);
     res.json({ message: `Kereskedési párok módosítva: ${symbols.join(', ')}` });
   });
+  
   
 
 app.post('/buy-limit', (req, res) => {
