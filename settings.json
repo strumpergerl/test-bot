@@ -1,5 +1,5 @@
 {
-  "symbol": ["AIXBTUSDC"],
+  "symbol": ["{TRUMPUSDC}"],
   "botRunning": true,
   "paperTrading": true,
   "buyLimit": 25,
