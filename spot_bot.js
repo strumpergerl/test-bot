@@ -71,8 +71,8 @@ async function trade() {
 
 	let { rsi, sma50, sma200, currentPrice } = indicators;
 	let usdcBalance = await getUSDCBalance();
-	let buyLimit = (config.buyLimit || 0) / 100;
-	let availableUSDC = usdcBalance * buyLimit;
+	let buyLimit = (config.buyLimit || 0);
+	let availableUSDC = usdcBalance * buyLimit/100;
 	let quantity = availableUSDC / currentPrice;
 
 	console.log(
@@ -87,7 +87,8 @@ async function trade() {
 
 	// ✅ VÉTELI LOGIKA: RSI < 30 és bullish trend (SMA50 > SMA200)
 	// Vételi logika
-	if (rsi < 30 && sma50 > sma200 && !openPosition) {
+	if (rsi < 30 && !openPosition) {
+	// if (rsi < 30 && sma50 > sma200 && !openPosition) {
 		console.log(`📉 Túladott piac! VÁSÁRLÁS @ ${currentPrice} USDC`);
 
 		if (config.paperTrading) {
@@ -115,7 +116,7 @@ async function trade() {
 	}
 
 	// Eladási logika
-	if (openPosition) {
+	if (rsi > 70 && openPosition) {
 		// Trailing Stop-Loss frissítése
 		let potentialTrailingStop =
 			currentPrice * (1 - config.trailingStopLossPercent / 100);
@@ -180,7 +181,7 @@ function saveTrade(type, symbol, price, quantity, profitLoss = 0) {
     let trade = { time: new Date().toISOString(), type, symbol, price, quantity, profitLoss };
     history.push(trade);
     fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
-  }
+}
   
 
 // 🔄 Trade futtatása időzítve (5 percenként)
@@ -220,4 +221,4 @@ app.post('/stop', (req, res) => {
 });
 
 // 🔥 Indítás
-app.listen(4000, () => console.log('✅ Trading bot API fut a 4000-es porton'));
+// app.listen(4000, () => console.log('✅ Trading bot API fut a 4000-es porton'));
