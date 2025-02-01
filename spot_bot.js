@@ -21,11 +21,9 @@ function getTradeHistoryFile() {
 let config = loadConfig();
 let botRunning = config.botRunning || false;
 let virtualBalance = config.virtualBalance || 100; // Alapértelmezett virtuális USDC egyenleg
-let openPosition = {};
+let openPositions = {};
 
 // stop-loss és trailing stop-loss változók
-let stopLossPrice = null;
-let trailingStopLossPrice = null;
 let stopLossPrices = {};
 let trailingStopLossPrices = {};
 
@@ -46,11 +44,14 @@ async function getUSDCBalance() {
 
 // 📊 Indikátorok számítása
 async function getIndicators(symbol) {
+	// Ellenőrizzük, hogy a symbol létezik, és nem üres
 	if (!symbol || typeof symbol !== 'string' || symbol.trim() === '') {
 	  console.error("❌ Hiba: Hiányzik a symbol paraméter.");
 	  return null;
 	}
-	symbol = String(symbol).trim().toUpperCase();
+	// Távolítsuk el a kapcsos zárójeleket, majd konvertáljuk nagybetűssé
+	symbol = symbol.replace(/[{}]/g, "").trim().toUpperCase();
+	
 	try {
 	  let response = await binance.klines(symbol, '15m', { limit: 200 });
 	  let closes = response.data.map((c) => parseFloat(c[4]));
@@ -64,7 +65,7 @@ async function getIndicators(symbol) {
 	  console.error('❌ Hiba az indikátorok számításában:', err);
 	  return null;
 	}
-  }
+}
   
   
 

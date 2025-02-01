@@ -1,6 +1,6 @@
 {
   "symbols": ["{TRUMPUSDC}"],
-  "symbol": "TRUMPUSDC",
+  "symbol": "BTCUSDC",
   "botRunning": true,
   "paperTrading": true,
   "buyLimit": 25,
