@@ -1,0 +1,12 @@
+{
+    "watch": [
+        "server.js",
+        "spot_bot.js",
+        "config.js"
+    ],
+    "ext": "js,json",
+    "ignore": [
+        "node_modules"
+    ],
+    "delay": "2500"
+}

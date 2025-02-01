@@ -17,11 +17,15 @@ app.get('/status', (req, res) => res.json({ running: config.botRunning }));
 
 app.post('/set-pair', (req, res) => {
     if (!req.body.symbol) return res.status(400).json({ message: "Hiányzó kereskedési pár." });
-
-    config.symbol = req.body.symbol;
+    // Ha a bejövő string tartalmaz vesszőt, több párt értelmezünk belőle
+    let symbols = req.body.symbol.split(',').map(s => s.trim());
+    config.symbols = symbols;
+    // (Opcionális) A backward compatibility miatt beállíthatjuk az első párt is:
+    config.symbol = symbols[0];
     saveConfig(config);
-    res.json({ message: `Kereskedési pár módosítva: ${config.symbol}` });
-});
+    res.json({ message: `Kereskedési párok módosítva: ${symbols.join(', ')}` });
+  });
+  
 
 app.post('/buy-limit', (req, res) => {
     const { limit } = req.body;

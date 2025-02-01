@@ -4,7 +4,7 @@
   "description": "RSI-alapú Binance trading bot papírkereskedési móddal és webes vezérléssel",
   "main": "bot.js",
   "scripts": {
-    "start": "concurrently \"nodemon server.js\" \"nodemon spot_bot.js\"",
+    "start": "concurrently \"nodemon server.js\" \" spot_bot.js\"",
     "trade": "node bot.js",
     "test_paper": "concurrently \"nodemon server.js\" \"nodemon spot_bot.js\" \"nodemon test_paper_trades.js\"",
     "plot": "python plot_trades.py",
