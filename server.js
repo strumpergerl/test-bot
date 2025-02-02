@@ -10,6 +10,12 @@ app.use(cors());
 
 let config = loadConfig();
 
+function getTradeHistoryFile() {
+    // Frissítjük a config értékét, ha szükséges
+    config = loadConfig();
+    return config.paperTrading ? 'paper_trades.json' : 'trade_history.json';
+  }
+
 // 📌 API végpontok
 app.get('/status', (req, res) => res.json({ running: config.botRunning }));
 
@@ -26,8 +32,6 @@ app.post('/set-pair', (req, res) => {
     saveConfig(config);
     res.json({ message: `Kereskedési párok módosítva: ${symbols.join(', ')}` });
   });
-  
-  
 
 app.post('/buy-limit', (req, res) => {
 	const { limit } = req.body;
