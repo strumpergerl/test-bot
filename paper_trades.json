@@ -453,5 +453,21 @@
     "price": 0.3704,
     "quantity": 67.49460043196544,
     "profitLoss": 0
+  },
+  {
+    "time": "2025-02-02T17:20:46.723Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 19.75,
+    "quantity": 1.2658227848101267,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-02T17:20:51.615Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 19.74,
+    "quantity": 1.2664640324214793,
+    "profitLoss": 0
   }
 ]

@@ -1,9 +1,11 @@
 {
-  "symbols": ["{TRUMPUSDC}"],
-  "symbol": "BTCUSDC",
+  "symbols": [
+    "TRUMPUSDC"
+  ],
+  "symbol": "TRUMPUSDC",
   "botRunning": true,
   "paperTrading": true,
-  "buyLimit": 25,
+  "buyLimit": 44,
   "virtualBalance": 100,
   "stopLossPercent": 5,
   "trailingStopLossPercent": 2

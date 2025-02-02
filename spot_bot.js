@@ -243,4 +243,12 @@ app.post('/stop', (req, res) => {
 });
 
 // 🔥 Indítás
-app.listen(4000);
+// app.listen(4000);
+
+module.exports = {
+	trade,         
+	saveTrade,
+	getIndicators,
+	getUSDCBalance,
+	binance
+  };
