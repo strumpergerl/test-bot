@@ -469,5 +469,21 @@
     "price": 19.74,
     "quantity": 1.2664640324214793,
     "profitLoss": 0
+  },
+  {
+    "time": "2025-02-02T22:40:58.948Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.292,
+    "quantity": 150.68493150684932,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-02T22:40:59.151Z",
+    "type": "BUY",
+    "symbol": "AIXBTUSDC",
+    "price": 0.292,
+    "quantity": 150.68493150684932,
+    "profitLoss": 0
   }
 ]

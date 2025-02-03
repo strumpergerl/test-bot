@@ -1,8 +1,8 @@
 {
   "symbols": [
-    "TRUMPUSDC"
+    "DOGEUSDC"
   ],
-  "symbol": "TRUMPUSDC",
+  "symbol": "DOGEUSDC",
   "botRunning": true,
   "paperTrading": true,
   "buyLimit": 44,

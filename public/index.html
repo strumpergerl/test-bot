@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spot Trading Bot</title>
     <script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Fejléc -->
@@ -110,6 +111,21 @@
         </div>
       </div>
 
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+		  <div class="my-6">
+			  <h2 class="text-xl font-semibold mb-2">Trade Előzmények</h2>
+			  <div class="scrollable overflow-y-scroll" style="max-height: 370px;">
+				  <table class="w-full text-left bg-gray-800 rounded overflow-hidden shadow-lg">
+					  <tbody id="trade-history-table" class="divide-y divide-gray-700"></tbody>
+				  </table>
+			  </div>
+		</div>
+        <div class="my-6">
+			<h2 class="text-xl font-semibold mb-2">Árfolyam grafikon</h2>
+			<canvas id="priceChart" class="bg-gray-800 p-4 rounded shadow-lg"></canvas>
+		  </div>
+      </div>
+
       <h2 class="text-xl font-semibold mt-6 mb-2">Spot Portfólió</h2>
       <table class="w-full text-left bg-gray-800 rounded overflow-hidden shadow-lg">
         <thead>
@@ -122,10 +138,6 @@
         <tbody id="portfolio-table" class="divide-y divide-gray-700"></tbody>
       </table>
 
-      <h2 class="text-xl font-semibold mt-6 mb-2">Trade Előzmények</h2>
-      <table class="w-full text-left bg-gray-800 rounded overflow-hidden shadow-lg">
-        <tbody id="trade-history-table" class="divide-y divide-gray-700"></tbody>
-      </table>
     </div>
 
     <script>
@@ -224,6 +236,13 @@
             `;
             document.getElementById('stop-loss').innerHTML = `Stop-Loss: <span class="font-semibold">${data.data.stopLoss || 'Nincs'}</span>`;
             document.getElementById('trailing-stop').innerHTML = `Trailing Stop-Loss: <span class="font-semibold">${data.data.trailingStop || 'Nincs'}</span>`;
+
+			if (data.data.rsi && data.data.rsi < 30) {
+				notifyUser('RSI kisebb, mint 30', `A ${data.data.symbol} kereskedési pár esetében a RSI kisebb, mint 30.`);
+			}
+			if (data.data.rsi && data.data.rsi > 70) {
+				notifyUser('RSI meghaladta a 70-et', `A ${data.data.symbol} kereskedési pár esetében a RSI meghaladta a 70-et.`);
+			}
           }
         } catch (err) {
           console.error(err);
@@ -339,6 +358,98 @@
         }
       }
 
+	  let priceChart; // Chart.js instance
+
+      // Inicializálja a Chart.js grafikont
+      function initPriceChart() {
+        const ctx = document.getElementById('priceChart').getContext('2d');
+        priceChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: [], // időpontok
+            datasets: [{
+              label: 'Ár (USDC)',
+              data: [],
+              borderColor: 'rgba(75, 192, 192, 1)',
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              fill: true,
+              tension: 0.1
+            }]
+          },
+          options: {
+            responsive: true,
+            scales: {
+              x: {
+                display: true,
+                title: {
+                  display: true,
+                  text: 'Idő'
+                }
+              },
+              y: {
+                display: true,
+                title: {
+                  display: true,
+                  text: 'Ár (USDC)'
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // Frissíti a grafikont a Binance API klines adataival
+      async function loadPriceChart() {
+        try {
+          // Lekérjük az aktuális kereskedési párt az /status végpontról
+          const statusResponse = await fetch(serverURL + '/status');
+          const statusData = await statusResponse.json();
+          // Ha több pár van, az elsőt vesszük
+          let symbol = (statusData.data.symbol || 'BTCUSDC').split(',')[0].trim();
+          // Lekérjük a Binance API-ról az utolsó 60 1perces gyertyát
+          const interval = '1m';
+          const limit = 60;
+          const klinesURL = `https://api.binance.com/api/v3/klines?symbol=${symbol.toUpperCase()}&interval=${interval}&limit=${limit}`;
+          const klinesResponse = await fetch(klinesURL);
+          const klinesData = await klinesResponse.json();
+          // Készítünk tömböt az időbélyegekből és a záróárakból
+          const labels = klinesData.map(item => new Date(item[0]).toLocaleTimeString());
+          const prices = klinesData.map(item => parseFloat(item[4]));
+          updatePriceChart(labels, prices);
+        } catch (error) {
+          console.error("Hiba a klines adatok lekérésekor:", error);
+        }
+      }
+
+      // Frissíti a már inicializált chartot
+      function updatePriceChart(labels, data) {
+        if (!priceChart) return;
+        priceChart.data.labels = labels;
+        priceChart.data.datasets[0].data = data;
+        priceChart.update();
+      }
+
+      // Inicializáljuk a grafikont
+      initPriceChart();
+      // Azonnali indulás
+      loadPriceChart();
+
+	  console.log(Notification.permission)
+	if (Notification.permission !== "granted") {
+		Notification.requestPermission().then(permission => {
+			if (permission === "granted") {
+			console.log("Browser notification engedélyezve.");
+			}
+		});
+	}
+	function notifyUser(title, body) {
+		if (Notification.permission === "granted") {
+			new Notification(title, { body });
+		}
+	}
+
+
+	  
       // Időzítők
       setInterval(loadTradeHistory, 10000);
       setInterval(loadBuyLimit, 5000);
@@ -346,6 +457,7 @@
       setInterval(loadBalance, 5000);
       setInterval(loadCurrentPair, 5000);
       setInterval(loadStatus, 5000);
+      setInterval(loadPriceChart, 60000);
 
       // Kezdeti lekérések
       loadTradeHistory();

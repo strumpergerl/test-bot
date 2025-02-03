@@ -207,7 +207,7 @@ function saveTrade(type, symbol, price, quantity, profitLoss = 0) {
 }
 
 // 🔄 Trade futtatása időzítve (5 percenként)
-setInterval(tradeSymbol, 5 * 1000);
+setInterval(tradeSymbol, 60 * 1000);
 
 // 🔥 API végpontok
 app.get('/status', (req, res) =>
