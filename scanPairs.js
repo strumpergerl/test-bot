@@ -91,8 +91,8 @@ async function scanPairsForRecommendations() {
   sellCandidates.sort((a, b) => b.score - a.score);
   
   return {
-    buyRecommendations: buyCandidates.slice(0, 5),
-    sellRecommendations: sellCandidates.slice(0, 5)
+    buyRecommendations: buyCandidates,
+    sellRecommendations: sellCandidates.slice(0, 10)
   };
 }
 

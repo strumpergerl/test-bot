@@ -1,8 +1,9 @@
 {
   "symbols": [
+    "AIXBTUSDC",
     "DOGEUSDC"
   ],
-  "symbol": "DOGEUSDC",
+  "symbol": "AIXBTUSDC",
   "botRunning": true,
   "paperTrading": true,
   "buyLimit": 44,
