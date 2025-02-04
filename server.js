@@ -5,6 +5,7 @@ const fs = require('fs');
 const { loadConfig, saveConfig } = require('./config');
 // Importáljuk a spot_bot.js-ből a szükséges függvényeket és a binance instance-t
 const { getIndicators, getUSDCBalance, binance } = require('./spot_bot');
+const { scanPairsForRecommendations } = require('./scanPairs'); 
 
 const app = express();
 app.use(express.json());
@@ -17,6 +18,17 @@ function getTradeHistoryFile() {
   config = loadConfig();
   return config.paperTrading ? 'paper_trades.json' : 'trade_history.json';
 }
+
+// /scan-recommendations
+app.get('/scan-recommendations', async (req, res) => {
+    try {
+      const recommendations = await scanPairsForRecommendations();
+      res.json(recommendations);
+    } catch (err) {
+      console.error("Error scanning pairs:", err);
+      res.status(500).json({ error: "Hiba a kereskedési ajánlások lekérésekor" });
+    }
+  });
 
 /**
  * GET /status

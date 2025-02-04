@@ -178,8 +178,8 @@ async function tradeSymbol(symbol) {
 	}
 }
 
-// A függvényt hívjuk meg 5 másodpercenként
-setInterval(trade, 5 * 1000);
+// A függvényt hívjuk meg 1 percenként
+setInterval(trade, 60 * 1000);
 
 // 🔥 Trade mentése JSON fájlba
 function saveTrade(type, symbol, price, quantity, profitLoss = 0) {
@@ -206,8 +206,8 @@ function saveTrade(type, symbol, price, quantity, profitLoss = 0) {
 	fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
 }
 
-// 🔄 Trade futtatása időzítve (5 percenként)
-setInterval(tradeSymbol, 60 * 1000);
+// 🔄 Trade futtatása időzítve (1 percenként)
+// setInterval(tradeSymbol, 60 * 1000);
 
 // 🔥 API végpontok
 app.get('/status', (req, res) =>
