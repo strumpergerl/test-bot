@@ -6,5 +6,85 @@
     "price": 0.25914,
     "quantity": 169.79239021378407,
     "profitLoss": 0
+  },
+  {
+    "time": "2025-02-04T21:36:55.185Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.25732,
+    "quantity": 170.9933157158402,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-04T21:37:53.014Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.25756,
+    "quantity": 170.83398043174404,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-04T21:43:52.691Z",
+    "type": "BUY",
+    "symbol": "BTCUSDC",
+    "price": 96692,
+    "quantity": 0.0002548297687502586,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-04T21:43:52.779Z",
+    "type": "BUY",
+    "symbol": "BTCUSDC",
+    "price": 96692,
+    "quantity": 0.0002548297687502586,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-05T11:32:54.704Z",
+    "type": "BUY",
+    "symbol": "ACTUSDC",
+    "price": 0.2183,
+    "quantity": 63.208428767750796,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-05T11:32:54.824Z",
+    "type": "BUY",
+    "symbol": "ACTUSDC",
+    "price": 0.2183,
+    "quantity": 63.208428767750796,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-05T11:42:36.409Z",
+    "type": "BUY",
+    "symbol": "ACTUSDC",
+    "price": 0.2196,
+    "quantity": 200.36429872495447,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-05T11:42:36.442Z",
+    "type": "BUY",
+    "symbol": "ACTUSDC",
+    "price": 0.2196,
+    "quantity": 200.36429872495447,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-05T11:44:25.788Z",
+    "type": "BUY",
+    "symbol": "ACTUSDC",
+    "price": 0.2196,
+    "quantity": 112.20400728597451,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-05T11:44:25.840Z",
+    "type": "BUY",
+    "symbol": "ACTUSDC",
+    "price": 0.2196,
+    "quantity": 112.20400728597451,
+    "profitLoss": 0
   }
 ]

@@ -97,11 +97,14 @@ app.get('/trading-mode', (req, res) => {
 app.get('/balance', async (req, res) => {
 	config = loadConfig();
 	if (config.paperTrading) {
-		// Paper trading esetén a virtuális USDC egyenleggel térünk vissza
-		res.json({
-			portfolio: [{ asset: 'USDC', free: config.virtualBalance, locked: 0 }],
-		});
-	} else {
+        res.json({
+          portfolio: Object.entries(virtualPortfolio).map(([asset, free]) => ({
+            asset,
+            free,
+            locked: 0
+          }))
+        });
+    } else {
 		try {
 			let accountInfo = await binance.account();
 			// Csak azokat az eszközöket adjuk vissza, amelyekből van szabad egyenleg

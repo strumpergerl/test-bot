@@ -44,20 +44,26 @@
 		</header>
 
 		<div class="container mx-auto p-6">
-			<!-- Kereskedési pár választó szekció (Radio button lista) -->
-			<div
-				class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6"
-			>
-				<label class="text-lg">Válassz USDC kereskedési párt:</label>
-				<div id="pair-container" class="flex flex-wrap gap-4">
-					<!-- Itt fog megjelenni a radio button lista -->
-				</div>
+			<!-- Kereskedési párok választó szekció (Checkbox list toggle) -->
+			<div class="mb-6">
 				<button
-					onclick="updateSelectedPair()"
+					id="toggle-pair-btn"
+					onclick="togglePairList()"
 					class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500"
 				>
-					Mentés
+					Kereskedési párok megjelenítése
 				</button>
+				<div id="pair-container" class="hidden mt-4">
+					<div id="pair-checkboxes" class="flex flex-col gap-2">
+						<!-- Itt fognak megjelenni a checkboxok -->
+					</div>
+					<button
+						onclick="updateSelectedPairs()"
+						class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500 mt-2"
+					>
+						Mentés
+					</button>
+				</div>
 			</div>
 			<!-- Üzenetmező a párok visszajelzéséhez -->
 			<div
@@ -169,53 +175,106 @@
 		<script>
 			const serverURL = 'http://localhost:3000';
 
-			// Betölti az USDC kereskedési párokat a multiselect-be
-			// Betölti az USDC kereskedési párokat és generálja a radio button listát
+			// Toggle a pair-container megjelenítéséhez/elrejtéséhez
+			function togglePairList() {
+				const container = document.getElementById('pair-container');
+				const btn = document.getElementById('toggle-pair-btn');
+				if (container.classList.contains('hidden')) {
+					container.classList.remove('hidden');
+					btn.innerText = 'Kereskedési párok elrejtése';
+				} else {
+					container.classList.add('hidden');
+					btn.innerText = 'Kereskedési párok megjelenítése';
+				}
+			}
+
+			// Betölti az USDC kereskedési párokat, rendezve ABC sorrendbe, és generálja a checkbox listát több oszlopos grid layout-ban.
 			async function loadUSDCpairs() {
 				try {
 					const response = await fetch(serverURL + '/usdc-pairs');
-					const pairs = await response.json();
-					const pairContainer = document.getElementById('pair-container');
-					pairContainer.innerHTML = '';
+					let pairs = await response.json();
+					// Rendezés ABC sorrendbe
+					pairs.sort((a, b) => a.localeCompare(b));
 
-					// Lekérjük a jelenlegi párt a /status végpontról
-					let currentPair = '';
+					const checkboxContainer = document.getElementById('pair-checkboxes');
+					checkboxContainer.innerHTML = '';
+
+					// Lekérjük a jelenlegi konfigurációt a /status végpontról, és bontsuk szét az aktuális párokat
+					let currentPairs = [];
 					try {
 						const statusResponse = await fetch(serverURL + '/status');
 						const statusData = await statusResponse.json();
 						if (statusData.data && statusData.data.symbol) {
-							// Ha több pár van, az elsőt vesszük
-							currentPair = statusData.data.symbol.split(',')[0].trim();
+							currentPairs = statusData.data.symbol
+								.split(',')
+								.map((s) => s.trim());
 						}
 					} catch (err) {
 						console.error('Error fetching current pair:', err);
 					}
 
-					pairs.forEach((pair) => {
-						const radioWrapper = document.createElement('div');
-						radioWrapper.className = 'flex items-center';
+					// Használjunk egy grid layout-ot (például 2 oszlop mobilon, 3 oszlop tablet-nél, 4 oszlop nagy képernyőn)
+					// A Tailwind CSS osztályok: grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+					checkboxContainer.className =
+						'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4';
 
-						const radioInput = document.createElement('input');
-						radioInput.type = 'radio';
-						radioInput.name = 'pair';
-						radioInput.value = pair;
-						radioInput.id = 'pair_' + pair;
-						radioInput.className = 'mr-2';
-						if (pair === currentPair) {
-							radioInput.checked = true;
+					pairs.forEach((pair) => {
+						const wrapper = document.createElement('div');
+						wrapper.className = 'flex items-center';
+
+						const checkbox = document.createElement('input');
+						checkbox.type = 'checkbox';
+						checkbox.name = 'pair';
+						checkbox.value = pair;
+						checkbox.id = 'pair_' + pair;
+						checkbox.className = 'mr-2';
+						if (currentPairs.includes(pair)) {
+							checkbox.checked = true;
 						}
 
-						const radioLabel = document.createElement('label');
-						radioLabel.htmlFor = radioInput.id;
-						radioLabel.textContent = pair;
+						const label = document.createElement('label');
+						label.htmlFor = checkbox.id;
+						label.textContent = pair;
+						label.className = 'select-none'; // megakadályozza a szöveg kijelölését
 
-						radioWrapper.appendChild(radioInput);
-						radioWrapper.appendChild(radioLabel);
-						pairContainer.appendChild(radioWrapper);
+						wrapper.appendChild(checkbox);
+						wrapper.appendChild(label);
+						checkboxContainer.appendChild(wrapper);
 					});
 				} catch (err) {
 					console.error('Error loading USDC pairs:', err);
 				}
+			}
+
+			// Frissíti a kiválasztott párokat a checkboxok alapján
+			function updateSelectedPairs() {
+				const checkboxes = document.getElementsByName('pair');
+				let selected = [];
+				checkboxes.forEach((checkbox) => {
+					if (checkbox.checked) {
+						selected.push(checkbox.value);
+					}
+				});
+				if (selected.length === 0) {
+					document.getElementById('pair-message').innerText =
+						'Kérlek válassz legalább egy kereskedési párt.';
+					return;
+				}
+				fetch(serverURL + '/set-pair', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ symbol: selected.join(',') }),
+				})
+					.then((res) => res.json())
+					.then((data) => {
+						document.getElementById('pair-message').innerText = data.message;
+						loadCurrentPair();
+					})
+					.catch((err) => {
+						document.getElementById('pair-message').innerText =
+							'Hiba történt a módosítás során.';
+						console.error(err);
+					});
 			}
 
 			// Frissíti a kiválasztott párt az új radio button érték alapján

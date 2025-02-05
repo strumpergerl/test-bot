@@ -5,6 +5,7 @@ const { Spot } = require('@binance/connector');
 const fs = require('fs');
 const ti = require('technicalindicators');
 const { loadConfig, saveConfig } = require('./config');
+const portfolioFile = 'portfolio.json';
 
 const app = express();
 app.use(express.json());
@@ -20,7 +21,7 @@ function getTradeHistoryFile() {
 
 let config = loadConfig();
 let botRunning = config.botRunning || false;
-let virtualBalance = config.virtualBalance || 100; // Alapértelmezett virtuális USDC egyenleg
+// let virtualBalance = config.virtualBalance; // Alapértelmezett virtuális USDC egyenleg
 let openPositions = {};
 
 // stop-loss és trailing stop-loss változók
@@ -30,7 +31,7 @@ let trailingStopLossPrices = {};
 // 📌 USDC egyenleg lekérése (Papírkereskedés esetén a virtuális egyenleget használjuk)
 async function getUSDCBalance() {
 	if (config.paperTrading) {
-		return virtualBalance;
+		return config.virtualBalance;
 	}
 	try {
 		let accountInfo = await binance.account();
@@ -110,14 +111,16 @@ async function tradeSymbol(symbol) {
 	if (rsi < 30 && !openPositions[symbol]) {
 		console.log(`Túladott piac! VÁSÁRLÁS @ ${currentPrice} USDC for ${symbol}`);
 		if (config.paperTrading) {
-			if (virtualBalance < availableUSDC) return;
-			virtualBalance -= availableUSDC;
-			openPositions[symbol] = { type: 'BUY', price: currentPrice, quantity };
-			console.log(
-				`[PAPER TRADE] BUY @ ${currentPrice} USDC | ${quantity.toFixed(
-					6
-				)} ${symbol}`
-			);
+			if (config.virtualBalance < availableUSDC) return;
+			config.virtualBalance -= availableUSDC;
+			// Számoljuk ki a vásárolt mennyiséget:
+			const quantity = availableUSDC / currentPrice;
+			const asset = symbol.replace("USDC", "");
+			virtualPortfolio[asset] = (virtualPortfolio[asset] || 0) + quantity;
+			console.log(`[PAPER TRADE] BUY @ ${currentPrice} USDC | ${quantity.toFixed(6)} ${asset}`);
+			// Mentés a konfigurációba (vagy külön fájlba, ha a portfóliót menteni szeretnéd)
+			saveConfig(config);
+			// Esetleg a virtualPortfolio-t is elmentheted egy külön JSON fájlba
 		} else {
 			if (usdcBalance < availableUSDC) return;
 			await binance.newOrder(symbol, 'BUY', 'MARKET', { quantity });
@@ -148,11 +151,13 @@ async function tradeSymbol(symbol) {
 				`Stop-Loss aktiválva! ELADÁS @ ${currentPrice} USDC for ${symbol}`
 			);
 			if (config.paperTrading) {
-				virtualBalance += currentPrice * openPositions[symbol].quantity;
-				console.log(
-					`[PAPER TRADE] SELL @ ${currentPrice} USDC | ${openPositions[symbol].quantity} ${symbol}`
-				);
-				console.log(`Új virtuális egyenleg: ${virtualBalance.toFixed(2)} USDC`);
+				const asset = symbol.replace("USDC", "");
+				if (!virtualPortfolio[asset] || virtualPortfolio[asset] < openPositions.quantity) return;
+				virtualPortfolio[asset] -= openPositions.quantity;
+				config.virtualBalance += currentPrice * openPositions.quantity;
+				console.log(`[PAPER TRADE] SELL @ ${currentPrice} USDC | ${openPositions.quantity} ${asset}`);
+				console.log(`Új virtuális egyenleg: ${config.virtualBalance.toFixed(2)} USDC`);
+				saveConfig(config);
 			} else {
 				await binance.newOrder(symbol, 'SELL', 'MARKET', {
 					quantity: openPositions[symbol].quantity,
@@ -206,8 +211,42 @@ function saveTrade(type, symbol, price, quantity, profitLoss = 0) {
 	fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
 }
 
-// 🔄 Trade futtatása időzítve (1 percenként)
-// setInterval(tradeSymbol, 60 * 1000);
+// Betölti a portfólió adatokat a portfolio.json fájlból.
+// Ha a fájl nem létezik, visszaad egy alapértelmezett portfóliót.
+function loadPortfolio() {
+	if (fs.existsSync(portfolioFile)) {
+	  try {
+		const data = fs.readFileSync(portfolioFile, 'utf8');
+		return JSON.parse(data);
+	  } catch (err) {
+		console.error("Hiba a portfólió fájl beolvasásakor:", err);
+		return {}; // vagy egy alapértelmezett objektum, pl.: { USDC: 1000 }
+	  }
+	} else {
+	  // Ha a fájl nem létezik, például egy üres portfólióval kezdünk
+	  return {};
+	}
+  }
+  
+  // Elmenti a portfólió adatait a portfolio.json fájlba.
+  function savePortfolio(portfolio) {
+	try {
+	  fs.writeFileSync(portfolioFile, JSON.stringify(portfolio, null, 2), 'utf8');
+	  console.log("Portfólió mentve.");
+	} catch (err) {
+	  console.error("Hiba a portfólió fájl mentésekor:", err);
+	}
+  }
+  
+  // Példa: Inicializáld a portfóliót, ha még nincs
+  let virtualPortfolio = loadPortfolio();
+  
+  // Ha nincs USDC egyenleg, vagy egy adott eszköz nincs definiálva, beállítjuk alapértelmezett értékre
+  if (typeof virtualPortfolio.USDC === 'undefined') {
+	// Például az eredeti virtuális egyenleg, ami a settings.json-ben van tárolva:
+	const config = require('./config').loadConfig();
+	virtualPortfolio.USDC = config.virtualBalance || 100;
+  }
 
 // 🔥 API végpontok
 app.get('/status', (req, res) =>

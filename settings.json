@@ -1,13 +1,13 @@
 {
   "symbols": [
-    "AIXBTUSDC",
-    "DOGEUSDC"
+    "ACTUSDC",
+    "TRUMPUSDC"
   ],
-  "symbol": "AIXBTUSDC",
+  "symbol": "ACTUSDC",
   "botRunning": true,
   "paperTrading": true,
   "buyLimit": 44,
-  "virtualBalance": 100,
+  "virtualBalance": 31.36,
   "stopLossPercent": 5,
   "trailingStopLossPercent": 2
 }
