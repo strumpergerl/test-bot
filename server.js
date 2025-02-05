@@ -6,12 +6,14 @@ const { loadConfig, saveConfig } = require('./config');
 // Importáljuk a spot_bot.js-ből a szükséges függvényeket és a binance instance-t
 const { getIndicators, getUSDCBalance, binance } = require('./spot_bot');
 const { scanPairsForRecommendations } = require('./scanPairs');
+const { loadPortfolio, savePortfolio } = require('./portfolio');
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 let config = loadConfig();
+let virtualPortfolio = loadPortfolio();
 
 // Segédfüggvény: trade history fájl neve a konfiguráció alapján
 function getTradeHistoryFile() {
@@ -95,29 +97,28 @@ app.get('/trading-mode', (req, res) => {
  * akkor a Binance API-ról lekért adatokat.
  */
 app.get('/balance', async (req, res) => {
-	config = loadConfig();
-	if (config.paperTrading) {
-        res.json({
-          portfolio: Object.entries(virtualPortfolio).map(([asset, free]) => ({
-            asset,
-            free,
-            locked: 0
-          }))
-        });
+    config = loadConfig();
+    if (config.paperTrading) {
+      // Frissítjük a virtualPortfolio-t a fájlból, hogy naprakész legyen
+      virtualPortfolio = loadPortfolio();
+      const portfolioArray = Object.entries(virtualPortfolio).map(([asset, free]) => ({
+        asset,
+        free,
+        locked: 0
+      }));
+      res.json({ portfolio: portfolioArray });
     } else {
-		try {
-			let accountInfo = await binance.account();
-			// Csak azokat az eszközöket adjuk vissza, amelyekből van szabad egyenleg
-			let portfolio = accountInfo.data.balances.filter(
-				(b) => parseFloat(b.free) > 0
-			);
-			res.json({ portfolio });
-		} catch (err) {
-			console.error('❌ Hiba a portfólió lekérésekor:', err);
-			res.status(500).json({ error: 'Nem sikerült lekérni a portfóliót' });
-		}
-	}
-});
+      try {
+        let accountInfo = await binance.account();
+        let portfolio = accountInfo.data.balances.filter(b => parseFloat(b.free) > 0);
+        res.json({ portfolio });
+      } catch (err) {
+        console.error("❌ Hiba a portfólió lekérésekor:", err);
+        res.status(500).json({ error: "Nem sikerült lekérni a portfóliót" });
+      }
+    }
+  });
+  
 
 /**
  * POST /set-pair

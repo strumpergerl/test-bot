@@ -211,42 +211,42 @@ function saveTrade(type, symbol, price, quantity, profitLoss = 0) {
 	fs.writeFileSync(historyFile, JSON.stringify(history, null, 2));
 }
 
-// Betölti a portfólió adatokat a portfolio.json fájlból.
-// Ha a fájl nem létezik, visszaad egy alapértelmezett portfóliót.
-function loadPortfolio() {
-	if (fs.existsSync(portfolioFile)) {
-	  try {
-		const data = fs.readFileSync(portfolioFile, 'utf8');
-		return JSON.parse(data);
-	  } catch (err) {
-		console.error("Hiba a portfólió fájl beolvasásakor:", err);
-		return {}; // vagy egy alapértelmezett objektum, pl.: { USDC: 1000 }
-	  }
-	} else {
-	  // Ha a fájl nem létezik, például egy üres portfólióval kezdünk
-	  return {};
-	}
-  }
+// // Betölti a portfólió adatokat a portfolio.json fájlból.
+// // Ha a fájl nem létezik, visszaad egy alapértelmezett portfóliót.
+// function loadPortfolio() {
+// 	if (fs.existsSync(portfolioFile)) {
+// 	  try {
+// 		const data = fs.readFileSync(portfolioFile, 'utf8');
+// 		return JSON.parse(data);
+// 	  } catch (err) {
+// 		console.error("Hiba a portfólió fájl beolvasásakor:", err);
+// 		return {}; // vagy egy alapértelmezett objektum, pl.: { USDC: 1000 }
+// 	  }
+// 	} else {
+// 	  // Ha a fájl nem létezik, például egy üres portfólióval kezdünk
+// 	  return {};
+// 	}
+//   }
   
-  // Elmenti a portfólió adatait a portfolio.json fájlba.
-  function savePortfolio(portfolio) {
-	try {
-	  fs.writeFileSync(portfolioFile, JSON.stringify(portfolio, null, 2), 'utf8');
-	  console.log("Portfólió mentve.");
-	} catch (err) {
-	  console.error("Hiba a portfólió fájl mentésekor:", err);
-	}
-  }
+//   // Elmenti a portfólió adatait a portfolio.json fájlba.
+//   function savePortfolio(portfolio) {
+// 	try {
+// 	  fs.writeFileSync(portfolioFile, JSON.stringify(portfolio, null, 2), 'utf8');
+// 	  console.log("Portfólió mentve.");
+// 	} catch (err) {
+// 	  console.error("Hiba a portfólió fájl mentésekor:", err);
+// 	}
+//   }
   
-  // Példa: Inicializáld a portfóliót, ha még nincs
-  let virtualPortfolio = loadPortfolio();
+//   // Példa: Inicializáld a portfóliót, ha még nincs
+//   let virtualPortfolio = loadPortfolio();
   
-  // Ha nincs USDC egyenleg, vagy egy adott eszköz nincs definiálva, beállítjuk alapértelmezett értékre
-  if (typeof virtualPortfolio.USDC === 'undefined') {
-	// Például az eredeti virtuális egyenleg, ami a settings.json-ben van tárolva:
-	const config = require('./config').loadConfig();
-	virtualPortfolio.USDC = config.virtualBalance || 100;
-  }
+//   // Ha nincs USDC egyenleg, vagy egy adott eszköz nincs definiálva, beállítjuk alapértelmezett értékre
+//   if (typeof virtualPortfolio.USDC === 'undefined') {
+// 	// Például az eredeti virtuális egyenleg, ami a settings.json-ben van tárolva:
+// 	const config = require('./config').loadConfig();
+// 	virtualPortfolio.USDC = config.virtualBalance || 100;
+//   }
 
 // 🔥 API végpontok
 app.get('/status', (req, res) =>
