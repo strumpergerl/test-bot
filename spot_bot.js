@@ -55,18 +55,47 @@ async function getIndicators(symbol) {
 	
 	try {
 	  let response = await binance.klines(symbol, '15m', { limit: 200 });
-	  let closes = response.data.map((c) => parseFloat(c[4]));
-	  return {
-		rsi: ti.RSI.calculate({ values: closes, period: 14 }).pop(),
-		sma50: ti.SMA.calculate({ values: closes, period: 50 }).pop(),
-		sma200: ti.SMA.calculate({ values: closes, period: 200 }).pop(),
-		currentPrice: closes[closes.length - 1],
-	  };
+	  let closes = response.data.map(candle => parseFloat(candle[4]));
+	  
+	  // Ellenőrizzük, hogy elegendő adat van-e a számításokhoz
+	  if (closes.length < 14) {
+		console.error(`Nincs elegendő adat az ${symbol} indikátorainak számításához.`);
+		return null;
+	  }
+	  
+	  // RSI számítása
+	  const rsiArr = ti.RSI.calculate({ values: closes, period: 14 });
+	  if (rsiArr.length === 0) {
+		console.error(`Nincs RSI adat az ${symbol} indikátorainak számításához.`);
+		return null;
+	  }
+	  
+	  // SMA50 számítása
+	  const sma50Arr = ti.SMA.calculate({ values: closes, period: 50 });
+	  if (sma50Arr.length === 0) {
+		console.error(`Nincs SMA50 adat az ${symbol} indikátorainak számításához.`);
+		return null;
+	  }
+	  
+	  // SMA200 számítása
+	  const sma200Arr = ti.SMA.calculate({ values: closes, period: 200 });
+	  if (sma200Arr.length === 0) {
+		console.error(`Nincs SMA200 adat az ${symbol} indikátorainak számításához.`);
+		return null;
+	  }
+	  
+	  const rsi = rsiArr[rsiArr.length - 1];
+	  const sma50 = sma50Arr[sma50Arr.length - 1];
+	  const sma200 = sma200Arr[sma200Arr.length - 1];
+	  const currentPrice = closes[closes.length - 1];
+	  
+	  return { rsi, sma50, sma200, currentPrice };
 	} catch (err) {
 	  console.error('❌ Hiba az indikátorok számításában:', err);
 	  return null;
 	}
-}
+  }
+  
   
   
 

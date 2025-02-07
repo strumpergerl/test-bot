@@ -1,13 +1,13 @@
 {
   "symbols": [
-    "ACTUSDC",
+    "DOGEUSDC",
     "TRUMPUSDC"
   ],
-  "symbol": "ACTUSDC",
+  "symbol": "DOGEUSDC",
   "botRunning": true,
   "paperTrading": true,
-  "buyLimit": 44,
-  "virtualBalance": 0.000015888274305829845,
+  "buyLimit": 50,
+  "virtualBalance": 2.2839795546665526e-87,
   "stopLossPercent": 5,
   "trailingStopLossPercent": 2
 }

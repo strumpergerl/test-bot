@@ -111,12 +111,16 @@ async function scanPairs() {
   
   console.log("\nTop 5 Buy Recommendations:");
   buyCandidates.slice(0, 5).forEach(candidate => {
-    console.log(`Symbol: ${candidate.symbol}, RSI: ${candidate.rsi.toFixed(2)}, SMA50: ${candidate.sma50.toFixed(2)}, SMA200: ${candidate.sma200.toFixed(2)}, Price: ${candidate.currentPrice}, Score: ${candidate.score.toFixed(2)}`);
+    console.log(
+      `Symbol: ${candidate.symbol}, RSI: ${candidate.rsi.toFixed(2)}, SMA50: ${candidate.sma50.toFixed(2)}, SMA200: ${candidate.sma200.toFixed(2)}, Price: ${typeof candidate.currentPrice === 'number' ? candidate.currentPrice.toFixed(2) : '-'}, Score: ${candidate.score.toFixed(2)}`
+    );
   });
   
   console.log("\nTop 5 Sell Recommendations:");
   sellCandidates.slice(0, 5).forEach(candidate => {
-    console.log(`Symbol: ${candidate.symbol}, RSI: ${candidate.rsi.toFixed(2)}, SMA50: ${candidate.sma50.toFixed(2)}, SMA200: ${candidate.sma200.toFixed(2)}, Price: ${candidate.currentPrice}, Score: ${candidate.score.toFixed(2)}`);
+    console.log(
+      `Symbol: ${candidate.symbol}, RSI: ${candidate.rsi.toFixed(2)}, SMA50: ${candidate.sma50.toFixed(2)}, SMA200: ${candidate.sma200.toFixed(2)}, Price: ${typeof candidate.currentPrice === 'number' ? candidate.currentPrice.toFixed(2) : '-'}, Score: ${candidate.score.toFixed(2)}`
+    );
   });
 }
 

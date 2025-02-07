@@ -49,7 +49,7 @@ function scoreBuy(indicators) {
   if (indicators.rsi >= 35 || indicators.sma50 <= indicators.sma200) return null;
   let baseScore = 35 - indicators.rsi;
   let trendDiffPercent = ((indicators.sma50 - indicators.sma200) / indicators.sma200) * 100;
-  let trendScore = trendDiffPercent * 0.3;
+  let trendScore = trendDiffPercent * 0.2;
   return baseScore + trendScore;
 }
 
@@ -65,35 +65,39 @@ function scoreSell(indicators) {
 
 // Fő függvény, amely végigmegy az összes USDC páron, és kiszámolja az ajánlásokat
 async function scanPairsForRecommendations() {
-  const pairs = await fetchUSDCpairs();
-  const buyCandidates = [];
-  const sellCandidates = [];
-  
-  for (const symbol of pairs) {
-    const indicators = await getIndicators(symbol);
-    // Várjunk 200 ms-t minden API hívás után a rate limit miatt
-    await delay(200);
-    if (!indicators) continue;
+    const pairs = await fetchUSDCpairs();
+    console.log(`Found ${pairs.length} USDC trading pairs.`);
+    const buyCandidates = [];
+    const sellCandidates = [];
     
-    const buyScore = scoreBuy(indicators);
-    if (buyScore !== null) {
-      buyCandidates.push({ symbol, ...indicators, score: buyScore });
+    for (const symbol of pairs) {
+      const indicators = await getIndicators(symbol);
+      await delay(200);
+      if (!indicators) {
+        console.warn(`Skipping ${symbol} due to insufficient data.`);
+        continue; // Ha nincs elegendő adat, lépjünk tovább a következő eszközre.
+      }
+      
+      const buyScore = scoreBuy(indicators);
+      if (buyScore !== null) {
+        buyCandidates.push({ symbol, ...indicators, score: buyScore });
+      }
+      
+      const sellScore = scoreSell(indicators);
+      if (sellScore !== null) {
+        sellCandidates.push({ symbol, ...indicators, score: sellScore });
+      }
     }
     
-    const sellScore = scoreSell(indicators);
-    if (sellScore !== null) {
-      sellCandidates.push({ symbol, ...indicators, score: sellScore });
-    }
+    // Rendezés: a magasabb pontszám jobb ajánlás
+    buyCandidates.sort((a, b) => b.score - a.score);
+    sellCandidates.sort((a, b) => b.score - a.score);
+    
+    return {
+      buyRecommendations: buyCandidates.slice(0, 5),
+      sellRecommendations: sellCandidates.slice(0, 5)
+    };
   }
   
-  // Rendezés: magasabb pontszám jobb ajánlás
-  buyCandidates.sort((a, b) => b.score - a.score);
-  sellCandidates.sort((a, b) => b.score - a.score);
-  
-  return {
-    buyRecommendations: buyCandidates,
-    sellRecommendations: sellCandidates.slice(0, 10)
-  };
-}
 
 module.exports = { scanPairsForRecommendations };

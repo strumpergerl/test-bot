@@ -1,466 +1,4106 @@
 [
   {
-    "time": "2025-02-04T07:47:27.095Z",
+    "time": "2025-02-06T16:16:08.390Z",
     "type": "BUY",
     "symbol": "DOGEUSDC",
-    "price": 0.25914,
-    "quantity": 169.79239021378407,
+    "price": 0.25012,
+    "quantity": 1.0573595250685878e-9,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-04T21:36:55.185Z",
+    "time": "2025-02-06T16:16:08.693Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.74,
+    "quantity": 7.45396742982399e-12,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:16:08.701Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.74,
+    "quantity": 7.45396742982399e-12,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:17:08.385Z",
     "type": "BUY",
     "symbol": "DOGEUSDC",
-    "price": 0.25732,
-    "quantity": 170.9933157158402,
+    "price": 0.25018,
+    "quantity": 2.6427648534070985e-10,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-04T21:37:53.014Z",
+    "time": "2025-02-06T16:17:08.673Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.72,
+    "quantity": 1.865595121403465e-12,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:17:08.845Z",
     "type": "BUY",
     "symbol": "DOGEUSDC",
-    "price": 0.25756,
-    "quantity": 170.83398043174404,
+    "price": 0.25013,
+    "quantity": 2.6432931316730815e-10,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-04T21:43:52.691Z",
+    "time": "2025-02-06T16:17:09.132Z",
     "type": "BUY",
-    "symbol": "BTCUSDC",
-    "price": 96692,
-    "quantity": 0.0002548297687502586,
+    "symbol": "TRUMPUSDC",
+    "price": 17.72,
+    "quantity": 1.865595121403465e-12,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-04T21:43:52.779Z",
+    "time": "2025-02-06T16:18:08.367Z",
     "type": "BUY",
-    "symbol": "BTCUSDC",
-    "price": 96692,
-    "quantity": 0.0002548297687502586,
+    "symbol": "DOGEUSDC",
+    "price": 0.24999,
+    "quantity": 6.611933587597384e-11,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:32:54.704Z",
+    "time": "2025-02-06T16:18:08.404Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2183,
-    "quantity": 63.208428767750796,
+    "symbol": "DOGEUSDC",
+    "price": 0.24999,
+    "quantity": 6.611933587597384e-11,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:32:54.824Z",
+    "time": "2025-02-06T16:18:08.654Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2183,
-    "quantity": 63.208428767750796,
+    "symbol": "TRUMPUSDC",
+    "price": 17.69,
+    "quantity": 4.671897336244968e-13,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:42:36.409Z",
+    "time": "2025-02-06T16:18:08.697Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2196,
-    "quantity": 200.36429872495447,
+    "symbol": "TRUMPUSDC",
+    "price": 17.69,
+    "quantity": 4.671897336244968e-13,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:42:36.442Z",
+    "time": "2025-02-06T16:19:08.382Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2196,
-    "quantity": 200.36429872495447,
+    "symbol": "DOGEUSDC",
+    "price": 0.24957,
+    "quantity": 1.6557651936966282e-11,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:44:25.788Z",
+    "time": "2025-02-06T16:19:08.404Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2196,
-    "quantity": 112.20400728597451,
+    "symbol": "DOGEUSDC",
+    "price": 0.24957,
+    "quantity": 1.6557651936966282e-11,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:44:25.840Z",
+    "time": "2025-02-06T16:19:08.669Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2196,
-    "quantity": 112.20400728597451,
+    "symbol": "TRUMPUSDC",
+    "price": 17.64,
+    "quantity": 1.1712849189083543e-13,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:57:32.858Z",
+    "time": "2025-02-06T16:19:08.684Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2188,
-    "quantity": 63.06398537477148,
+    "symbol": "TRUMPUSDC",
+    "price": 17.64,
+    "quantity": 1.1712849189083543e-13,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T11:58:32.799Z",
+    "time": "2025-02-06T16:20:08.383Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2194,
-    "quantity": 35.219252506836824,
+    "symbol": "DOGEUSDC",
+    "price": 0.24795,
+    "quantity": 4.166458150744782e-12,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:00:59.507Z",
+    "time": "2025-02-06T16:20:08.404Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2193,
-    "quantity": 19.731774920200632,
+    "symbol": "DOGEUSDC",
+    "price": 0.24795,
+    "quantity": 4.166458150744782e-12,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:00:59.533Z",
+    "time": "2025-02-06T16:20:08.673Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2193,
-    "quantity": 19.731774920200632,
+    "symbol": "TRUMPUSDC",
+    "price": 17.5,
+    "quantity": 2.9516379956490533e-14,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:02:07.409Z",
+    "time": "2025-02-06T16:20:08.692Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2193,
-    "quantity": 11.049793955312357,
+    "symbol": "TRUMPUSDC",
+    "price": 17.5,
+    "quantity": 2.9516379956490533e-14,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:02:07.477Z",
+    "time": "2025-02-06T16:21:08.390Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2193,
-    "quantity": 11.049793955312357,
+    "symbol": "DOGEUSDC",
+    "price": 0.24794,
+    "quantity": 1.0416565484362836e-12,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:03:07.428Z",
+    "time": "2025-02-06T16:21:08.417Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 6.244837073465254,
+    "symbol": "DOGEUSDC",
+    "price": 0.24794,
+    "quantity": 1.0416565484362836e-12,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:03:07.445Z",
+    "time": "2025-02-06T16:21:08.686Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 6.244837073465254,
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 7.366466760390535e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:23:16.821Z",
+    "time": "2025-02-06T16:21:08.697Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2183,
-    "quantity": 3.481089023343289,
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 7.366466760390535e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:23:16.889Z",
+    "time": "2025-02-06T16:22:08.388Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2183,
-    "quantity": 3.481089023343289,
+    "symbol": "DOGEUSDC",
+    "price": 0.24817,
+    "quantity": 2.6017278943797814e-13,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:24:16.836Z",
+    "time": "2025-02-06T16:22:08.423Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2183,
-    "quantity": 1.949409853072242,
+    "symbol": "DOGEUSDC",
+    "price": 0.24817,
+    "quantity": 2.6017278943797814e-13,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:24:16.846Z",
+    "time": "2025-02-06T16:22:08.674Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2183,
-    "quantity": 1.949409853072242,
+    "symbol": "TRUMPUSDC",
+    "price": 17.6,
+    "quantity": 1.834292078262018e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:29:16.873Z",
+    "time": "2025-02-06T16:22:08.708Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 1.0896728656532941,
+    "symbol": "TRUMPUSDC",
+    "price": 17.6,
+    "quantity": 1.834292078262018e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:29:16.884Z",
+    "time": "2025-02-06T16:23:08.404Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 1.0896728656532941,
+    "symbol": "DOGEUSDC",
+    "price": 0.24777,
+    "quantity": 6.514820312671332e-14,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:30:16.873Z",
+    "time": "2025-02-06T16:23:08.436Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.6102168047658448,
+    "symbol": "DOGEUSDC",
+    "price": 0.24777,
+    "quantity": 6.514820312671332e-14,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:30:16.884Z",
+    "time": "2025-02-06T16:23:08.692Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.6102168047658448,
+    "symbol": "TRUMPUSDC",
+    "price": 17.51,
+    "quantity": 4.609300482211809e-16,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:31:16.957Z",
+    "time": "2025-02-06T16:23:08.723Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.217,
-    "quantity": 0.34439849084462,
+    "symbol": "TRUMPUSDC",
+    "price": 17.51,
+    "quantity": 4.609300482211809e-16,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:31:16.968Z",
+    "time": "2025-02-06T16:24:08.403Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.217,
-    "quantity": 0.34439849084462,
+    "symbol": "DOGEUSDC",
+    "price": 0.24814,
+    "quantity": 1.6262765262256952e-14,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:32:16.926Z",
+    "time": "2025-02-06T16:24:08.437Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.217,
-    "quantity": 0.19286315487298716,
+    "symbol": "DOGEUSDC",
+    "price": 0.24814,
+    "quantity": 1.6262765262256952e-14,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:32:16.936Z",
+    "time": "2025-02-06T16:24:08.691Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.217,
-    "quantity": 0.19286315487298716,
+    "symbol": "TRUMPUSDC",
+    "price": 17.48,
+    "quantity": 1.154302795244977e-16,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:33:16.907Z",
+    "time": "2025-02-06T16:24:08.721Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.1071638343857586,
+    "symbol": "TRUMPUSDC",
+    "price": 17.48,
+    "quantity": 1.154302795244977e-16,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:33:16.919Z",
+    "time": "2025-02-06T16:25:08.424Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.1071638343857586,
+    "symbol": "DOGEUSDC",
+    "price": 0.24831,
+    "quantity": 4.062907829101164e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:34:16.917Z",
+    "time": "2025-02-06T16:25:08.436Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.06001174725602481,
+    "symbol": "DOGEUSDC",
+    "price": 0.24831,
+    "quantity": 4.062907829101164e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:34:16.925Z",
+    "time": "2025-02-06T16:25:08.704Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.06001174725602481,
+    "symbol": "TRUMPUSDC",
+    "price": 17.48,
+    "quantity": 2.8857569881124426e-17,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:35:16.923Z",
+    "time": "2025-02-06T16:25:08.716Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.03360657846337389,
+    "symbol": "TRUMPUSDC",
+    "price": 17.48,
+    "quantity": 2.8857569881124426e-17,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:35:16.932Z",
+    "time": "2025-02-06T16:26:08.421Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2187,
-    "quantity": 0.03360657846337389,
+    "symbol": "DOGEUSDC",
+    "price": 0.24855,
+    "quantity": 1.0147461708349527e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:36:16.943Z",
+    "time": "2025-02-06T16:26:08.451Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.018940933628929256,
+    "symbol": "DOGEUSDC",
+    "price": 0.24855,
+    "quantity": 1.0147461708349527e-15,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:36:16.952Z",
+    "time": "2025-02-06T16:26:08.702Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.018940933628929256,
+    "symbol": "TRUMPUSDC",
+    "price": 17.51,
+    "quantity": 7.202032003455952e-18,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:37:16.972Z",
+    "time": "2025-02-06T16:26:08.740Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.010606922832200385,
+    "symbol": "TRUMPUSDC",
+    "price": 17.51,
+    "quantity": 7.202032003455952e-18,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:37:16.979Z",
+    "time": "2025-02-06T16:27:08.428Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.010606922832200385,
+    "symbol": "DOGEUSDC",
+    "price": 0.24851,
+    "quantity": 2.5372737592151976e-16,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:38:16.955Z",
+    "time": "2025-02-06T16:27:08.464Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.005939876786032214,
+    "symbol": "DOGEUSDC",
+    "price": 0.24851,
+    "quantity": 2.5372737592151976e-16,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:38:16.964Z",
+    "time": "2025-02-06T16:27:08.716Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.005939876786032214,
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 1.7974284546823512e-18,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:39:16.945Z",
+    "time": "2025-02-06T16:27:08.739Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.00332633100017804,
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 1.7974284546823512e-18,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:40:16.981Z",
+    "time": "2025-02-06T16:28:08.449Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.0018627453600997027,
+    "symbol": "DOGEUSDC",
+    "price": 0.24807,
+    "quantity": 6.354435259226919e-17,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:40:16.989Z",
+    "time": "2025-02-06T16:28:08.463Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2173,
-    "quantity": 0.0018627453600997027,
+    "symbol": "DOGEUSDC",
+    "price": 0.24807,
+    "quantity": 6.354435259226919e-17,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:41:16.950Z",
+    "time": "2025-02-06T16:28:08.734Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2176,
-    "quantity": 0.0010416992526645803,
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 4.493571136705878e-19,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:41:16.959Z",
+    "time": "2025-02-06T16:28:08.747Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2176,
-    "quantity": 0.0010416992526645803,
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 4.493571136705878e-19,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:42:16.977Z",
+    "time": "2025-02-06T16:29:08.436Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2177,
-    "quantity": 0.0005830836202696145,
+    "symbol": "DOGEUSDC",
+    "price": 0.248,
+    "quantity": 1.5890572124560705e-17,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:42:16.986Z",
+    "time": "2025-02-06T16:29:08.477Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2177,
-    "quantity": 0.0005830836202696145,
+    "symbol": "DOGEUSDC",
+    "price": 0.248,
+    "quantity": 1.5890572124560705e-17,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:43:16.992Z",
+    "time": "2025-02-06T16:29:08.715Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2177,
-    "quantity": 0.0003265268273509841,
+    "symbol": "TRUMPUSDC",
+    "price": 17.52,
+    "quantity": 1.1246751960305522e-19,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:43:17.003Z",
+    "time": "2025-02-06T16:29:08.768Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2177,
-    "quantity": 0.0003265268273509841,
+    "symbol": "TRUMPUSDC",
+    "price": 17.52,
+    "quantity": 1.1246751960305522e-19,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:44:16.982Z",
+    "time": "2025-02-06T16:30:08.457Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2177,
-    "quantity": 0.00018285502331655113,
+    "symbol": "DOGEUSDC",
+    "price": 0.24797,
+    "quantity": 3.973123650936661e-18,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:44:16.990Z",
+    "time": "2025-02-06T16:30:08.486Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2177,
-    "quantity": 0.00018285502331655113,
+    "symbol": "DOGEUSDC",
+    "price": 0.24797,
+    "quantity": 3.973123650936661e-18,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:45:16.996Z",
+    "time": "2025-02-06T16:30:08.756Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2179,
-    "quantity": 0.00010230482607878558,
+    "symbol": "TRUMPUSDC",
+    "price": 17.52,
+    "quantity": 2.8116879900763804e-20,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:45:17.006Z",
+    "time": "2025-02-06T16:30:08.775Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2179,
-    "quantity": 0.00010230482607878558,
+    "symbol": "TRUMPUSDC",
+    "price": 17.52,
+    "quantity": 2.8116879900763804e-20,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:46:16.962Z",
+    "time": "2025-02-06T16:31:08.443Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2174,
-    "quantity": 0.000057422465949575595,
+    "symbol": "DOGEUSDC",
+    "price": 0.24734,
+    "quantity": 9.95810899695524e-19,
     "profitLoss": 0
   },
   {
-    "time": "2025-02-05T12:46:16.979Z",
+    "time": "2025-02-06T16:31:08.486Z",
     "type": "BUY",
-    "symbol": "ACTUSDC",
-    "price": 0.2174,
-    "quantity": 0.000057422465949575595,
+    "symbol": "DOGEUSDC",
+    "price": 0.24734,
+    "quantity": 9.95810899695524e-19,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:31:08.727Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.49,
+    "quantity": 7.041276956280473e-21,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:31:08.764Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.49,
+    "quantity": 7.041276956280473e-21,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:32:08.473Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24844,
+    "quantity": 2.4785045476844604e-19,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:32:08.501Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24844,
+    "quantity": 2.4785045476844604e-19,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:32:08.755Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 1.7503117391322548e-21,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:32:08.779Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 1.7503117391322548e-21,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:33:08.465Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24737,
+    "quantity": 6.223063324440385e-20,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:33:08.524Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24737,
+    "quantity": 6.223063324440385e-20,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:33:08.748Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 4.390756345028004e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:33:08.802Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 4.390756345028004e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:34:08.480Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24751,
+    "quantity": 1.5548858375084017e-20,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:34:08.520Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24751,
+    "quantity": 1.5548858375084017e-20,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:34:08.767Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 1.097689086257001e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:34:08.804Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 1.097689086257001e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:35:08.499Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24703,
+    "quantity": 3.894767777615113e-21,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:35:08.540Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24703,
+    "quantity": 3.894767777615113e-21,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:35:09.244Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 2.7442227156425025e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:35:09.291Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 2.7442227156425025e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:36:08.489Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24718,
+    "quantity": 9.731010641073927e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:36:08.548Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24718,
+    "quantity": 9.731010641073927e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:36:08.776Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.55,
+    "quantity": 6.852738490771093e-24,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:36:08.834Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.55,
+    "quantity": 6.852738490771093e-24,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:37:08.532Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2475,
+    "quantity": 2.429607283091569e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:37:08.665Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2475,
+    "quantity": 2.429607283091569e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:38:08.514Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24776,
+    "quantity": 1.213528823387882e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:38:08.561Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24776,
+    "quantity": 1.213528823387882e-22,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:39:08.514Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24798,
+    "quantity": 6.062261095301671e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:39:08.567Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24798,
+    "quantity": 6.062261095301671e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:40:08.539Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24753,
+    "quantity": 3.0366410261643205e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:40:08.596Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24753,
+    "quantity": 3.0366410261643205e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:41:08.552Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24705,
+    "quantity": 1.521270498292763e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:41:08.841Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 1.0689131871536609e-25,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:41:09.053Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24705,
+    "quantity": 1.521270498292763e-23,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:41:09.338Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 1.0689131871536609e-25,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:42:08.553Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24719,
+    "quantity": 3.801022256191868e-24,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:42:08.837Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.56,
+    "quantity": 2.675326570353268e-26,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:42:09.070Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24719,
+    "quantity": 3.801022256191868e-24,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:42:09.353Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.56,
+    "quantity": 2.675326570353268e-26,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:43:08.549Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24773,
+    "quantity": 9.481842040811243e-25,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:43:08.612Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24773,
+    "quantity": 9.481842040811243e-25,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:43:08.828Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 6.67690940525915e-27,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:43:08.891Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 6.67690940525915e-27,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:44:08.553Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24717,
+    "quantity": 2.375831137243769e-25,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:44:08.620Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24717,
+    "quantity": 2.375831137243769e-25,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:44:08.834Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 1.6739856961018883e-27,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:44:08.906Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 1.6739856961018883e-27,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:45:08.582Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24714,
+    "quantity": 5.940298840662603e-26,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:45:08.622Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24714,
+    "quantity": 5.940298840662603e-26,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:45:08.872Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.55,
+    "quantity": 4.182579645246028e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:45:08.909Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.55,
+    "quantity": 4.182579645246028e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:46:08.575Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24752,
+    "quantity": 1.4827947796959395e-26,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:46:08.631Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24752,
+    "quantity": 1.4827947796959395e-26,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:46:08.854Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.6,
+    "quantity": 1.0426743291770993e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:46:08.921Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.6,
+    "quantity": 1.0426743291770993e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:47:08.593Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24744,
+    "quantity": 3.708185457791172e-27,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:47:08.653Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24744,
+    "quantity": 3.708185457791172e-27,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:47:08.875Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.61,
+    "quantity": 2.605205592492469e-29,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:47:08.931Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.61,
+    "quantity": 2.605205592492469e-29,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:48:08.653Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24791,
+    "quantity": 9.252888242465486e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:48:09.050Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24791,
+    "quantity": 9.252888242465486e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:49:08.605Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24827,
+    "quantity": 4.61973561886176e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:49:08.668Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24827,
+    "quantity": 4.61973561886176e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:50:08.625Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24769,
+    "quantity": 2.3152766807194664e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:50:08.664Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24769,
+    "quantity": 2.3152766807194664e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:51:08.619Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24712,
+    "quantity": 1.1603085162014499e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:51:08.676Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24712,
+    "quantity": 1.1603085162014499e-28,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:52:08.617Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24669,
+    "quantity": 5.811655124320043e-29,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:52:08.668Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24669,
+    "quantity": 5.811655124320043e-29,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:52:08.906Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.61,
+    "quantity": 4.0706337382694824e-31,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:52:08.954Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.61,
+    "quantity": 4.0706337382694824e-31,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:53:08.624Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2465,
+    "quantity": 1.4540336740552855e-29,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:53:08.684Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2465,
+    "quantity": 1.4540336740552855e-29,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:54:08.628Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24617,
+    "quantity": 7.27991430017118e-30,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:54:08.692Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24617,
+    "quantity": 7.27991430017118e-30,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:54:08.909Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 5.094077610213585e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:54:08.985Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 5.094077610213585e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:55:08.643Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24636,
+    "quantity": 1.8185749546122945e-30,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:55:08.702Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24636,
+    "quantity": 1.8185749546122945e-30,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:55:08.924Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 1.274243816320492e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:55:08.982Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 1.274243816320492e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:56:08.703Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24641,
+    "quantity": 4.545514851449666e-31,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:56:08.981Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 3.18560954080123e-33,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:56:09.098Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24641,
+    "quantity": 4.545514851449666e-31,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:56:09.379Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 3.18560954080123e-33,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:57:08.654Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24667,
+    "quantity": 1.135180924459513e-31,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:57:08.726Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24667,
+    "quantity": 1.135180924459513e-31,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:58:08.661Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24665,
+    "quantity": 5.676364861877722e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:58:08.732Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24665,
+    "quantity": 5.676364861877722e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:58:08.946Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.61,
+    "quantity": 3.9752282600287914e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:58:09.018Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.61,
+    "quantity": 3.9752282600287914e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:59:08.658Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24681,
+    "quantity": 1.4181712584398326e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:59:08.739Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24681,
+    "quantity": 1.4181712584398326e-32,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:59:08.943Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 9.955029815003843e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T16:59:09.024Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.58,
+    "quantity": 9.955029815003843e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:00:08.664Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24707,
+    "quantity": 3.5416971738326695e-33,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:00:08.739Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24707,
+    "quantity": 3.5416971738326695e-33,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:01:08.677Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24582,
+    "quantity": 1.77985339016117e-33,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:01:08.758Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24582,
+    "quantity": 1.77985339016117e-33,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:01:08.968Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.56,
+    "quantity": 1.245796014719302e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:01:09.053Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.56,
+    "quantity": 1.245796014719302e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:02:08.699Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24732,
+    "quantity": 4.422646372810719e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:02:08.900Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24732,
+    "quantity": 4.422646372810719e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:03:08.709Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24787,
+    "quantity": 2.206416470172968e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:03:08.774Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24787,
+    "quantity": 2.206416470172968e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:04:08.707Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24802,
+    "quantity": 1.1025410258482653e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:04:08.772Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24802,
+    "quantity": 1.1025410258482653e-34,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:05:08.707Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24776,
+    "quantity": 5.518490176600071e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:05:08.772Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24776,
+    "quantity": 5.518490176600071e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:05:09.001Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.6,
+    "quantity": 3.884264562938732e-37,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:05:09.066Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.6,
+    "quantity": 3.884264562938732e-37,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:06:08.732Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24771,
+    "quantity": 1.3799010194929895e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:06:08.777Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24771,
+    "quantity": 1.3799010194929895e-35,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:06:09.024Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 9.71618196528165e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:06:09.058Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.59,
+    "quantity": 9.71618196528165e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:07:08.721Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24814,
+    "quantity": 3.44377449764859e-36,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:07:08.789Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24814,
+    "quantity": 3.44377449764859e-36,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:07:09.022Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 2.4359697943173353e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:07:09.086Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.54,
+    "quantity": 2.4359697943173353e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:08:08.727Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24804,
+    "quantity": 8.612907231157486e-37,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:08:08.798Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24804,
+    "quantity": 8.612907231157486e-37,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:08:09.017Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 6.09339848721136e-39,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:08:09.079Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.53,
+    "quantity": 6.09339848721136e-39,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:09:08.734Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24835,
+    "quantity": 2.150539067461549e-37,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:09:08.789Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24835,
+    "quantity": 2.150539067461549e-37,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:09:09.024Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.47,
+    "quantity": 1.528581503732329e-39,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:09:09.079Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.47,
+    "quantity": 1.528581503732329e-39,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:10:08.738Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24752,
+    "quantity": 5.394375983800053e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:10:08.815Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24752,
+    "quantity": 5.394375983800053e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:10:09.029Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 3.828027360981047e-40,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:10:09.101Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 3.828027360981047e-40,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:11:08.769Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24749,
+    "quantity": 1.3487574684938677e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:11:08.810Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24749,
+    "quantity": 1.3487574684938677e-38,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:11:09.089Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.41,
+    "quantity": 9.586559043008252e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:11:09.506Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.41,
+    "quantity": 9.586559043008252e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:12:08.753Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2472,
+    "quantity": 3.375849371738949e-39,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:12:08.814Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2472,
+    "quantity": 3.375849371738949e-39,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:12:09.034Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.4,
+    "quantity": 2.398017139924909e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:12:09.103Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.4,
+    "quantity": 2.398017139924909e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:13:08.770Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24762,
+    "quantity": 8.425308584664691e-40,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:13:08.831Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24762,
+    "quantity": 8.425308584664691e-40,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:13:09.061Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 5.981292751532886e-42,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:13:09.114Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 5.981292751532886e-42,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:14:08.814Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24765,
+    "quantity": 2.106071988425874e-40,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:14:08.871Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24765,
+    "quantity": 2.106071988425874e-40,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:14:09.137Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.43,
+    "quantity": 1.496181089884302e-42,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:14:09.190Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.43,
+    "quantity": 1.496181089884302e-42,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:15:08.787Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24793,
+    "quantity": 5.259233734659658e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:15:08.860Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24793,
+    "quantity": 5.259233734659658e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:15:09.077Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.45,
+    "quantity": 3.736165672877276e-43,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:15:09.143Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.45,
+    "quantity": 3.736165672877276e-43,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:16:08.798Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24829,
+    "quantity": 1.3129020699929207e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:16:08.866Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24829,
+    "quantity": 1.3129020699929207e-41,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:16:09.084Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.46,
+    "quantity": 9.335064574986892e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:16:09.159Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.46,
+    "quantity": 9.335064574986892e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:17:08.808Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24796,
+    "quantity": 3.2866233965008697e-42,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:17:08.871Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24796,
+    "quantity": 3.2866233965008697e-42,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:17:09.092Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 2.3431602570338003e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:17:09.162Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 2.3431602570338003e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:18:08.814Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24749,
+    "quantity": 8.232162283287767e-43,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:18:08.870Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24749,
+    "quantity": 8.232162283287767e-43,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:18:09.110Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 5.857900642584501e-45,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:18:09.604Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 5.857900642584501e-45,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:19:08.827Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2474,
+    "quantity": 2.0587892517086595e-43,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:19:08.880Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2474,
+    "quantity": 2.0587892517086595e-43,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:19:09.114Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.4,
+    "quantity": 1.4636335082549493e-45,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:19:09.159Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.4,
+    "quantity": 1.4636335082549493e-45,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:20:08.837Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24776,
+    "quantity": 5.139494479261405e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:20:08.903Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24776,
+    "quantity": 5.139494479261405e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:20:09.123Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 3.6506913766680215e-46,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:20:09.179Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 3.6506913766680215e-46,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:21:08.847Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24779,
+    "quantity": 1.2847180598307093e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:21:08.915Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24779,
+    "quantity": 1.2847180598307093e-44,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:21:09.133Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 9.126728441670054e-47,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:21:09.194Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.44,
+    "quantity": 9.126728441670054e-47,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:22:08.861Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24787,
+    "quantity": 3.2107585432429446e-45,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:22:08.915Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24787,
+    "quantity": 3.2107585432429446e-45,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:22:09.145Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.43,
+    "quantity": 2.282991164984592e-47,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:22:09.201Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.43,
+    "quantity": 2.282991164984592e-47,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:23:08.863Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24816,
+    "quantity": 8.017516119777852e-46,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:23:08.917Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24816,
+    "quantity": 8.017516119777852e-46,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:23:09.149Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.43,
+    "quantity": 5.70747791246148e-48,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:23:09.202Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.43,
+    "quantity": 5.70747791246148e-48,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:26:09.174Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.5,
+    "quantity": 2.842324000405817e-48,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:26:09.232Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.5,
+    "quantity": 2.842324000405817e-48,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:27:08.892Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2484,
+    "quantity": 1.0012212159239492e-46,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:27:08.958Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24842,
+    "quantity": 1.001140608789586e-46,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:56:09.367Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.42,
+    "quantity": 7.13844288276432e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:56:09.420Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.42,
+    "quantity": 7.13844288276432e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:57:09.368Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 3.575378810171204e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:57:09.440Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 3.575378810171204e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:58:09.502Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.38,
+    "quantity": 1.7887179950770207e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:58:09.564Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.38,
+    "quantity": 1.7887179950770207e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:59:09.383Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.37,
+    "quantity": 8.948738846988663e-50,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T17:59:09.441Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.37,
+    "quantity": 8.948738846988663e-50,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:00:09.421Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.38,
+    "quantity": 4.471794987692552e-50,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:00:09.462Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.38,
+    "quantity": 4.471794987692552e-50,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:01:09.427Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 2.244939251475926e-50,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:01:09.475Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 2.244939251475926e-50,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:02:09.186Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24711,
+    "quantity": 7.862874518038176e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:02:09.248Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24711,
+    "quantity": 7.862874518038176e-49,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:02:09.526Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.22,
+    "quantity": 5.641680958630703e-51,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:02:09.585Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.22,
+    "quantity": 5.641680958630703e-51,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:03:09.427Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.3,
+    "quantity": 2.8077961302780547e-51,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:03:09.479Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.3,
+    "quantity": 2.8077961302780547e-51,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:04:09.519Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.38,
+    "quantity": 1.3974359336539224e-51,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:04:10.944Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.37,
+    "quantity": 1.3982404448419786e-51,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:05:09.452Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.35,
+    "quantity": 6.999261246946734e-52,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:05:09.496Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.35,
+    "quantity": 6.999261246946734e-52,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:06:09.597Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.38,
+    "quantity": 3.493589834134806e-52,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:06:09.653Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.38,
+    "quantity": 3.493589834134806e-52,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:07:09.569Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.36,
+    "quantity": 1.7488073536078034e-52,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:07:09.639Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.36,
+    "quantity": 1.7488073536078034e-52,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:08:09.523Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 8.728952173269541e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:08:09.583Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.39,
+    "quantity": 8.728952173269541e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:09:09.530Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 4.3795867943784575e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:09:09.587Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 4.3795867943784575e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:10:09.536Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.35,
+    "quantity": 2.1872691396708545e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:10:09.596Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.35,
+    "quantity": 2.1872691396708545e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:11:09.490Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.34,
+    "quantity": 1.0942652702793924e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:11:09.545Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.34,
+    "quantity": 1.0942652702793924e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:12:09.565Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 5.474483492973072e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:12:09.615Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 5.474483492973072e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:13:09.521Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 2.737241746486536e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:13:09.545Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.34,
+    "quantity": 2.735663175698481e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:14:09.273Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24752,
+    "quantity": 9.58233667311968e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:14:09.585Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.35,
+    "quantity": 6.83521606147142e-55,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:14:09.751Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24752,
+    "quantity": 9.58233667311968e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:14:10.060Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.35,
+    "quantity": 6.83521606147142e-55,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:15:09.235Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24738,
+    "quantity": 2.3969399035194673e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:15:09.285Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24738,
+    "quantity": 2.3969399035194673e-53,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:15:09.525Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 1.710776091554085e-55,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:15:09.575Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 1.710776091554085e-55,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:16:09.334Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24695,
+    "quantity": 6.00278389686825e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:16:09.648Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 4.276940228885212e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:16:09.734Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24695,
+    "quantity": 6.00278389686825e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:16:10.045Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.33,
+    "quantity": 4.276940228885212e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:31:09.376Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24668,
+    "quantity": 1.5023385391312777e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:31:09.423Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24668,
+    "quantity": 1.5023385391312777e-54,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:31:09.697Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 1.070470453012431e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:31:09.743Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 1.070470453012431e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:32:09.373Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24652,
+    "quantity": 3.75828402191408e-55,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:32:09.433Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24652,
+    "quantity": 3.75828402191408e-55,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:32:09.694Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 2.6761761325310777e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:32:09.759Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 2.6761761325310777e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:33:09.372Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24667,
+    "quantity": 9.389996524529322e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:33:09.434Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24667,
+    "quantity": 9.389996524529322e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:37:09.366Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24729,
+    "quantity": 4.683227066815576e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:37:09.425Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24729,
+    "quantity": 4.683227066815576e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:38:09.378Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2471,
+    "quantity": 2.343414045635014e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:38:09.444Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2471,
+    "quantity": 2.343414045635014e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:39:09.378Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2465,
+    "quantity": 1.1745590480251762e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:39:09.440Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2465,
+    "quantity": 1.1745590480251762e-56,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:40:09.389Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24628,
+    "quantity": 5.878041362234164e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:40:09.456Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24628,
+    "quantity": 5.878041362234164e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:41:09.422Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24623,
+    "quantity": 2.9396174850567145e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:41:09.490Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24623,
+    "quantity": 2.9396174850567145e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:42:09.427Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24621,
+    "quantity": 1.4699281372517664e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:42:09.490Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24621,
+    "quantity": 1.4699281372517664e-57,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:43:09.415Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2463,
+    "quantity": 7.346955068468483e-58,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:43:09.481Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2463,
+    "quantity": 7.346955068468483e-58,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:43:09.704Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.3,
+    "quantity": 5.229927842091871e-60,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:43:09.776Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.3,
+    "quantity": 5.229927842091871e-60,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:44:09.428Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24629,
+    "quantity": 1.8368133433795395e-58,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:44:09.474Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24629,
+    "quantity": 1.8368133433795395e-58,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:44:09.718Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.32,
+    "quantity": 1.3059721661112782e-60,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:44:09.759Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.32,
+    "quantity": 1.3059721661112782e-60,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:45:09.471Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24583,
+    "quantity": 4.600626025515059e-59,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:45:09.531Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24583,
+    "quantity": 4.600626025515059e-59,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:45:09.798Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.28,
+    "quantity": 3.272488124572821e-61,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:45:09.879Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.28,
+    "quantity": 3.272488124572821e-61,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:46:09.436Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24586,
+    "quantity": 1.1500161635202625e-59,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:46:09.497Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24586,
+    "quantity": 1.1500161635202625e-59,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:46:09.789Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.29,
+    "quantity": 8.176488547226483e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:46:10.172Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.29,
+    "quantity": 8.176488547226483e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:47:09.468Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24563,
+    "quantity": 2.8777325037972945e-60,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:47:09.532Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24563,
+    "quantity": 2.8777325037972945e-60,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:47:09.778Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.26,
+    "quantity": 2.047675072154488e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:47:09.854Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.26,
+    "quantity": 2.047675072154488e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:48:09.447Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24606,
+    "quantity": 7.181758868850376e-61,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:48:09.519Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24606,
+    "quantity": 7.181758868850376e-61,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:48:09.736Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 5.104400887548595e-63,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:48:09.804Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.31,
+    "quantity": 5.104400887548595e-63,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:49:09.465Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24633,
+    "quantity": 1.793471752597454e-61,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:49:09.517Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24633,
+    "quantity": 1.793471752597454e-61,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:50:09.465Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24638,
+    "quantity": 8.965538940200725e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:50:09.538Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24638,
+    "quantity": 8.965538940200725e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:51:09.467Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2458,
+    "quantity": 4.493347201152674e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:51:09.534Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2458,
+    "quantity": 4.493347201152674e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:51:09.753Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.26,
+    "quantity": 3.1994923002413874e-64,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:51:09.826Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.26,
+    "quantity": 3.1994923002413874e-64,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:52:09.500Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24621,
+    "quantity": 1.1214661691679126e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:52:09.575Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24621,
+    "quantity": 1.1214661691679126e-62,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:53:09.768Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.29,
+    "quantity": 7.984852096900863e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:53:09.842Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.29,
+    "quantity": 7.984852096900863e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:54:09.486Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24628,
+    "quantity": 2.8028685389681643e-63,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:54:09.566Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24628,
+    "quantity": 2.8028685389681643e-63,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:54:09.769Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.27,
+    "quantity": 1.9985247937958296e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:54:09.859Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.27,
+    "quantity": 1.9985247937958296e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:55:09.577Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24596,
+    "quantity": 7.01628784941738e-64,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:55:09.874Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.25,
+    "quantity": 5.002104809978837e-66,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:55:09.970Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24596,
+    "quantity": 7.01628784941738e-64,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:55:10.312Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.25,
+    "quantity": 5.002104809978837e-66,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:56:09.478Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24599,
+    "quantity": 1.7538580424434924e-64,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:56:09.568Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24599,
+    "quantity": 1.7538580424434924e-64,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:56:09.768Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.24,
+    "quantity": 1.2512515657212142e-66,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:56:09.862Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.24,
+    "quantity": 1.2512515657212142e-66,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:57:09.587Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24589,
+    "quantity": 4.38642827952209e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:57:09.868Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.25,
+    "quantity": 3.126315506236773e-67,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:57:09.923Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24589,
+    "quantity": 4.38642827952209e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:57:10.213Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.25,
+    "quantity": 3.126315506236773e-67,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:58:09.488Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24624,
+    "quantity": 1.0950483772454583e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:58:09.578Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24624,
+    "quantity": 1.0950483772454583e-65,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:58:09.772Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.27,
+    "quantity": 7.80673747576496e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:58:09.859Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.27,
+    "quantity": 7.80673747576496e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:59:09.517Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24549,
+    "quantity": 2.745984687898913e-66,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:59:09.603Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24549,
+    "quantity": 2.745984687898913e-66,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:59:09.833Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.23,
+    "quantity": 1.9562152670699483e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T18:59:09.913Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.23,
+    "quantity": 1.9562152670699483e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:00:09.624Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24498,
+    "quantity": 6.879253214877788e-67,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:00:09.953Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.17,
+    "quantity": 4.907627992372627e-69,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:00:10.003Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24498,
+    "quantity": 6.879253214877788e-67,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:00:10.338Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.17,
+    "quantity": 4.907627992372627e-69,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:01:09.523Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24379,
+    "quantity": 1.7282081428491328e-67,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:01:09.597Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24379,
+    "quantity": 1.7282081428491328e-67,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:01:09.820Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 1.2312094188930162e-69,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:01:09.883Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 1.2312094188930162e-69,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:02:09.504Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24383,
+    "quantity": 4.319811581277838e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:02:09.595Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24383,
+    "quantity": 4.319811581277838e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:02:09.791Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 3.076225636282054e-70,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:02:09.880Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 3.076225636282054e-70,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:03:09.547Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24433,
+    "quantity": 1.0777428660653371e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:03:09.637Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24433,
+    "quantity": 1.0777428660653371e-68,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:03:09.865Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.15,
+    "quantity": 7.677111208913815e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:03:09.950Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.15,
+    "quantity": 7.677111208913815e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:04:09.525Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2451,
+    "quantity": 2.6858926404094635e-69,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:04:09.617Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2451,
+    "quantity": 2.6858926404094635e-69,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:04:09.827Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.18,
+    "quantity": 1.915926327602909e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:04:09.905Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.18,
+    "quantity": 1.915926327602909e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:05:09.605Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2458,
+    "quantity": 6.69560909443002e-70,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:05:09.661Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2458,
+    "quantity": 6.69560909443002e-70,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:06:09.567Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24541,
+    "quantity": 3.353124802190006e-70,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:06:09.629Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24541,
+    "quantity": 3.353124802190006e-70,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:06:09.863Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.21,
+    "quantity": 2.3907331717183304e-72,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:06:09.928Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.21,
+    "quantity": 2.3907331717183304e-72,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:07:09.540Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2447,
+    "quantity": 8.407134835568548e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:07:09.641Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.2447,
+    "quantity": 8.407134835568548e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:07:09.848Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 6.008253195863387e-73,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:07:09.935Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 6.008253195863387e-73,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:08:09.589Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24499,
+    "quantity": 2.0992957817294823e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:08:09.669Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24499,
+    "quantity": 2.0992957817294823e-71,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:08:09.905Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.13,
+    "quantity": 1.5011864377288556e-73,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:08:09.987Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.13,
+    "quantity": 1.5011864377288556e-73,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:09:09.589Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24544,
+    "quantity": 5.238617111777887e-72,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:09:09.689Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24544,
+    "quantity": 5.238617111777887e-72,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:09:09.908Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.19,
+    "quantity": 3.739866736226773e-74,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:09:10.013Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.19,
+    "quantity": 3.739866736226773e-74,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:10:09.568Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24572,
+    "quantity": 1.3081619159152335e-72,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:10:09.657Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24572,
+    "quantity": 1.3081619159152335e-72,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:10:09.848Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.19,
+    "quantity": 9.349666840566933e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:10:09.947Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.19,
+    "quantity": 9.349666840566933e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:14:09.992Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.24,
+    "quantity": 4.661275318716519e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:14:10.043Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.24,
+    "quantity": 4.661275318716519e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:31:10.184Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.19,
+    "quantity": 2.337416710141733e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:31:10.231Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.19,
+    "quantity": 2.337416710141733e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:32:10.158Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.15,
+    "quantity": 1.1714342054617027e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:32:10.233Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.15,
+    "quantity": 1.1714342054617027e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:33:10.145Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 5.870864004578668e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:33:10.272Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 5.870864004578668e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:34:10.166Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.16,
+    "quantity": 2.9268788787395395e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:34:10.237Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.15,
+    "quantity": 2.928585513654257e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:35:10.076Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.16,
+    "quantity": 1.4634394393697697e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:35:10.146Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.16,
+    "quantity": 1.4634394393697697e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:36:10.190Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.15,
+    "quantity": 7.321463784135642e-77,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:36:10.257Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.15,
+    "quantity": 7.321463784135642e-77,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:37:10.208Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.13,
+    "quantity": 3.665005951486464e-77,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:37:11.283Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.13,
+    "quantity": 3.665005951486464e-77,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:38:09.808Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24459,
+    "quantity": 1.283403899361444e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:38:09.884Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24459,
+    "quantity": 1.283403899361444e-75,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:38:10.095Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 9.167866814977091e-78,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:38:10.167Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 9.167866814977091e-78,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:39:09.818Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24473,
+    "quantity": 3.2066742915132557e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:39:09.881Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24473,
+    "quantity": 3.2066742915132557e-76,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:39:10.103Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 2.293306251788542e-78,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:39:10.166Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 2.293306251788542e-78,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:40:10.250Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 1.1459833518721364e-78,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:40:10.310Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.12,
+    "quantity": 1.1459833518721364e-78,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:41:10.098Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.05,
+    "quantity": 5.753441344296474e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:41:10.171Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.05,
+    "quantity": 5.753441344296474e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:42:10.221Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.06,
+    "quantity": 2.875034434942992e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:42:10.306Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.06,
+    "quantity": 2.875034434942992e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:43:10.117Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.09,
+    "quantity": 1.4349937817474383e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:43:10.193Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.09,
+    "quantity": 1.4349937817474383e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:44:10.267Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 7.166582036839194e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:44:10.318Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.11,
+    "quantity": 7.166582036839194e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:45:10.265Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.05,
+    "quantity": 3.595900840185296e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:45:10.340Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.05,
+    "quantity": 3.595900840185296e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:46:10.268Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.03,
+    "quantity": 1.8000619296875895e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:46:10.368Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.03,
+    "quantity": 1.8000619296875895e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:47:10.141Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.02,
+    "quantity": 9.005597726962294e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:47:10.232Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.02,
+    "quantity": 9.005597726962294e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:48:09.924Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24391,
+    "quantity": 3.1420456994977295e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:48:10.017Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24391,
+    "quantity": 3.1420456994977295e-79,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:48:10.271Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.88,
+    "quantity": 2.2700721758426875e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:48:10.364Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.88,
+    "quantity": 2.2700721758426875e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:49:10.205Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24356,
+    "quantity": 7.866402185955116e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:49:10.531Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.91,
+    "quantity": 5.66511211239275e-82,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:49:11.024Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24356,
+    "quantity": 7.866402185955116e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:49:11.390Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.92,
+    "quantity": 5.661763937385425e-82,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:50:09.895Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24431,
+    "quantity": 1.960563337983738e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:50:10.005Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24431,
+    "quantity": 1.960563337983738e-80,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:50:10.201Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 1.4129357790643276e-82,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:50:10.297Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 1.4129357790643276e-82,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:51:09.895Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24356,
+    "quantity": 4.916501366221947e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:51:10.003Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24356,
+    "quantity": 4.916501366221947e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:51:10.186Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.86,
+    "quantity": 3.551195352185698e-83,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:51:10.287Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.86,
+    "quantity": 3.551195352185698e-83,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:52:09.907Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24386,
+    "quantity": 1.2276132542821881e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:52:09.996Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24386,
+    "quantity": 1.2276132542821881e-81,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:52:10.191Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.91,
+    "quantity": 8.851737675613671e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:52:10.280Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.91,
+    "quantity": 8.851737675613671e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:53:09.926Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24424,
+    "quantity": 3.064258190604061e-82,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:53:10.007Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24424,
+    "quantity": 3.064258190604061e-82,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:53:10.218Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.93,
+    "quantity": 2.2103202022242645e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:53:10.296Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.93,
+    "quantity": 2.2103202022242645e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:54:09.951Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24439,
+    "quantity": 7.65594357863595e-83,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:54:10.014Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24439,
+    "quantity": 7.65594357863595e-83,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:54:10.245Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 5.51928038697003e-85,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:54:10.307Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 5.51928038697003e-85,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:55:10.063Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24462,
+    "quantity": 1.912186300366732e-83,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:55:10.331Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24462,
+    "quantity": 1.912186300366732e-83,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:55:10.390Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 1.3798200967425074e-85,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:55:10.923Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 1.3798200967425074e-85,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:56:10.019Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24409,
+    "quantity": 4.790845720796734e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:56:10.087Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24409,
+    "quantity": 4.790845720796734e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:56:10.361Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 3.4495502418562686e-86,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:56:10.431Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 3.4495502418562686e-86,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:57:10.013Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24385,
+    "quantity": 1.19889023168882e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:57:10.076Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24385,
+    "quantity": 1.19889023168882e-84,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:57:10.348Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 8.623875604640671e-87,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:57:10.424Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.95,
+    "quantity": 8.623875604640671e-87,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:58:10.003Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24434,
+    "quantity": 2.991214936127105e-85,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:58:10.082Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24434,
+    "quantity": 2.991214936127105e-85,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:58:10.347Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.02,
+    "quantity": 2.147101814022611e-87,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:58:10.426Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.02,
+    "quantity": 2.147101814022611e-87,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:59:09.994Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24425,
+    "quantity": 7.48079280955268e-86,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:59:10.593Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17.01,
+    "quantity": 5.370910181461617e-88,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:59:11.096Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24425,
+    "quantity": 7.48079280955268e-86,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T19:59:11.785Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 17,
+    "quantity": 5.374069540391888e-88,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T20:00:09.966Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24348,
+    "quantity": 1.8761126619570826e-86,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T20:00:10.044Z",
+    "type": "BUY",
+    "symbol": "DOGEUSDC",
+    "price": 0.24348,
+    "quantity": 1.8761126619570826e-86,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T20:00:10.265Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.98,
+    "quantity": 1.3450998555162265e-88,
+    "profitLoss": 0
+  },
+  {
+    "time": "2025-02-06T20:00:10.328Z",
+    "type": "BUY",
+    "symbol": "TRUMPUSDC",
+    "price": 16.98,
+    "quantity": 1.3450998555162265e-88,
     "profitLoss": 0
   }
 ]
