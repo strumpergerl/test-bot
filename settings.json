@@ -1,13 +1,18 @@
 {
   "symbols": [
+    "BTCUSDC",
+    "XRPUSDC",
     "DOGEUSDC",
-    "TRUMPUSDC"
+    "SHIBUSDC",
+    "BTTCUSDC",
+    "AIXBTUSDC",
+    "ANIMEUSDC"
   ],
-  "symbol": "DOGEUSDC",
+  "symbol": "BTCUSDC",
   "botRunning": true,
   "paperTrading": true,
   "buyLimit": 50,
-  "virtualBalance": 2.2839795546665526e-87,
+  "virtualBalance": 100,
   "stopLossPercent": 5,
   "trailingStopLossPercent": 2
 }

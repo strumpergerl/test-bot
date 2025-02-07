@@ -7,13 +7,17 @@ const { loadConfig, saveConfig } = require('./config');
 const { getIndicators, getUSDCBalance, binance } = require('./spot_bot');
 const { scanPairsForRecommendations } = require('./scanPairs');
 const { loadPortfolio, savePortfolio } = require('./portfolio');
+const { initPaperTradingPortfolio } = require('./initPortfolio');
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 let config = loadConfig();
-let virtualPortfolio = loadPortfolio();
+// Ha paper trading mód van, inicializáljuk a virtuális portfóliót
+if (config.paperTrading) {
+    initPaperTradingPortfolio();
+}
 
 // Segédfüggvény: trade history fájl neve a konfiguráció alapján
 function getTradeHistoryFile() {
@@ -96,11 +100,11 @@ app.get('/trading-mode', (req, res) => {
  * Visszaadja a portfólió adatait. Ha paper trading, akkor a virtuális egyenleget; ha real trading,
  * akkor a Binance API-ról lekért adatokat.
  */
+// /balance végpont paper trading esetén
 app.get('/balance', async (req, res) => {
     config = loadConfig();
     if (config.paperTrading) {
-      // Frissítjük a virtualPortfolio-t a fájlból, hogy naprakész legyen
-      virtualPortfolio = loadPortfolio();
+      const virtualPortfolio = loadPortfolio();
       const portfolioArray = Object.entries(virtualPortfolio).map(([asset, free]) => ({
         asset,
         free,
